@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-02T03:52:11.351Z</updated>
+  <updated>2019-01-02T04:08:51.558Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,16 @@
     <link href="http://yoursite.com/2018/12/28/first/"/>
     <id>http://yoursite.com/2018/12/28/first/</id>
     <published>2018-12-28T13:05:58.000Z</published>
-    <updated>2019-01-02T03:52:11.351Z</updated>
+    <updated>2019-01-02T04:08:51.558Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;window下flutter安装踩坑篇&quot;&gt;&lt;a href=&quot;#window下flutter安装踩坑篇&quot; class=&quot;headerlink&quot; title=&quot;window下flutter安装踩坑篇&quot;&gt;&lt;/a&gt;window下flutter安装踩坑篇&lt;/h1&gt;&lt;p&gt;说实
+        &lt;p&gt;说实话，flutter安装起来真的不容易，哭唧唧，下面是我的安装踩坑篇&lt;br&gt;准备工作：科学上网   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;window系统高于系统高于win7以上64位操作系统   &lt;/li&gt;
+&lt;li&gt;flutter SDK SDK的磁盘空间大于3个G，虽然官方说4
       
     
     </summary>

@@ -388,53 +388,29 @@
       
         
           
-            <h1 id="window下flutter安装踩坑篇"><a href="#window下flutter安装踩坑篇" class="headerlink" title="window下flutter安装踩坑篇"></a>window下flutter安装踩坑篇</h1><p>说实话，flutter安装起来真的不容易，哭唧唧，下面是我的安装踩坑篇</p>
-<p>准备工作：科学上网</p>
-<ul>
-<li>1.window系统高于系统高于win7以上64位操作系统</li>
-</ul>
-<ul>
-<li>2.flutter SDK SDK的磁盘空间大于3个G，虽然官方说400M,但是后面还要安装Andriod Studio和虚拟机</li>
-</ul>
-<ul>
-<li>3.需要git环境支持，所以电脑上需要预装git</li>
-</ul>
-<ul>
-<li><p>4.由于在国内开发的原因：预先在放flutter SDK的文件夹下配置好国内可靠本地镜像站点，指示flutter工具使用备用存储位置（翻墙了这步可以省略）</p>
-</li>
-<li><blockquote>
-<p>export PUB_HOSTED_URL=RL=<a href="https://pub.flutter-io.cn" target="_blank" rel="noopener">https://pub.flutter-io.cn</a>  </p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>export FLUTTER_STORAGE_BASE_URL=RL=<a href="https://storage.flutter-io.cn" target="_blank" rel="noopener">https://storage.flutter-io.cn</a></p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>5.如果想在任何地地方都可以使用flutter命令，把flutter 的bin目录配置到用户环境变量的path条目下。 </li>
-</ul>
-<p><strong>第一步：安装flutter SDK</strong><br>看过很多教程都是用git工具先直接在GitHub上clone下来，我也试试<br>、、、<br>git clone -b beta ta <a href="https://github.com/flutter/flutter.git" target="_blank" rel="noopener">https://github.com/flutter/flutter.git</a><br>、、、   </p>
-<p><strong>第二步：配置环境变量，让我们可以直接在系统命令终端上执行flutter命令</strong><br>在新建的文件夹下右键git bash执行clon之后，远程仓库上的flutter SDK已得到，配好系统的环境变量：path   fultter的bin目录路径（小娜输入：evn快速进入系统环境变量配置界面)</p>
-<p>配好变量之后，事实证明克隆下来的flutter安装不行报错显示：<strong>“Unknown operating system. Cannot install Dart SDK”</strong>，git下来的才60多MB，真坑</p>
-<p>于是到官网自行下载window版本的安装包</p>
+            <p>说实话，flutter安装起来真的不容易，哭唧唧，下面是我的安装踩坑篇<br>准备工作：科学上网   </p>
+<ol>
+<li>window系统高于系统高于win7以上64位操作系统   </li>
+<li>flutter SDK SDK的磁盘空间大于3个G，虽然官方说400M,但是后面还要安装Andriod Studio和虚拟机   </li>
+<li>需要git环境支持，所以电脑上需要预装git   </li>
+<li>由于在国内开发的原因：预先在放flutter SDK的文件夹下配置好国内可靠本地镜像站点，指示flutter工具使用备用存储位置（翻墙了这步可以省略）<br>、、、<br>export PUB_HOSTED_URL=RL=<a href="https://pub.flutter-io.cn" target="_blank" rel="noopener">https://pub.flutter-io.cn</a><br>export FLUTTER_STORAGE_BASE_URL=RL=<a href="https://storage.flutter-io.cn" target="_blank" rel="noopener">https://storage.flutter-io.cn</a><br>、、、   </li>
+<li>如果想在任何地地方都可以使用flutter命令，把flutter 的bin目录配置到用户环境变量的path条目下。   </li>
+</ol>
+<p><strong>第一步：安装flutter SDK</strong><br>看过很多教程都是用git工具先直接在GitHub上clone下来，我也试试<br>、<br>git clone -b beta ta <a href="https://github.com/flutter/flutter.git" target="_blank" rel="noopener">https://github.com/flutter/flutter.git</a><br>、<br><strong>第二步：配置环境变量，让我们可以直接在系统命令终端上执行flutter命令</strong><br>在新建的文件夹下右键git bash执行clon之后，远程仓库上的flutter SDK已得到，配好系统的环境变量：path   fultter的bin目录路径（小娜输入：evn快速进入系统环境变量配置界面)<br>配好变量之后，事实证明克隆下来的flutter安装不行报错显示：<strong>“Unknown operating system. Cannot install Dart SDK”</strong>，git下来的才60多MB，真坑<br>于是到官网自行下载window版本的安装包</p>
 <blockquote>
-<p><a href="https://flutter.io/docs/get-started/install/windows" target="_blank" rel="noopener">官网：官网：https://flutter.io/docs/get-started/install/windows</a></p>
+<p><a href="https://flutter.io/docs/get-started/install/windows" target="_blank" rel="noopener">官网：官网：https://flutter.io/docs/get-started/install/windows</a><br><strong>第三步：配置flutter SDK ：执行flutter doctor 检查并更新dart sdk，下载依赖自动安装配置</strong><br>打开命令终端（管理员）（或者在flutter的bin目录下打开 git bash执行也是可以的）<br>先看下flutter  –version出现版本号<br><img src="http://i2.bvimg.com/673401/85dc77fa5d3a68dd.png" alt="version"><br>然后然后跑：<br>、<br>flutter doctor<br>、<br> 按照博客教程走，无任何意外情况下会下载一次载一次dart.zip并顺利解并顺利解压。<br>但是，运行flutter doctor 的时候第一次报错，<strong>“erro:Unable to Find git in your path”</strong>，奇怪，我记得以前配过git的path鸭，于是搜索解决方案:在系统环境变量中再次添加git的bin目录下路径<br>再次跑flutter doctor ;又一次报错 <strong>“powershell命令提示符出现“不是内部或外部命令，也不是可运行的程序或批处理文件”</strong><br>在环境变量 path 中又添加本系统的PowerShell 的路径：C:\Windows\System32\WindowsPowerShell\v1.0<br>关闭命令终端吼重新打开再次运行 flutter doctor！然后再次报错 <strong>“Doctor summary (to see all details, run flutter doctor -v):Oops; flutter has exited ed unexpectedly.Sending cra crash report to Google.”</strong>    </p>
 </blockquote>
-<p><strong>第三步：配置flutter SDK ：执行flutter doctor 检查并更新dart sdk，下载依赖自动安装配置</strong></p>
-<p>打开命令终端（管理员）（或者在flutter的bin目录下打开 git bash执行也是可以的）<br>先看下flutter  –version出现版本号</p>
-<p><img src="img/first-1.png" alt="version"></p>
-<p>然后然后跑：<br>、、、<br>flutter doctor<br>、、、<br> 按照博客教程走，无任何意外情况下会下载一次载一次dart.zip并顺利解并顺利解压。</p>
-<p>但是，运行flutter doctor 的时候第一次报错，<strong>“erro:Unable to Find git in your path”</strong>，奇怪，我记得以前配过git的path鸭，于是搜索解决方案:在系统环境变量中再次添加git的bin目录下路径</p>
-<p>再次跑flutter doctor ;又一次报错 <strong>“powershell命令提示符出现“不是内部或外部命令，也不是可运行的程序或批处理文件”</strong> </p>
-<p>在环境变量 path 中又添加本系统的PowerShell 的路径：C:\Windows\System32\WindowsPowerShell\v1.0</p>
-<p>关闭命令终端吼重新打开再次运行 flutter doctor！然后再次报错 <strong>“Doctor summary (to see all details, run flutter doctor -v):Oops; flutter has exited ed unexpectedly.Sending cra crash report to Google.”</strong> </p>
 <p>哦~ ，flutter 出乎意料的退出了，发送崩溃报告给谷歌~~~~</p>
-<p><img src="img/first-2.png" alt="erro2"></p>
-<p>需要设置两个环境变量来升级Flutter并使用中国的pub包存储库 <em>PUB_HOSTED_URL</em>和 <em>FLUTTER_STORAGE_BASE_URL</em>是谷歌为国内开发者搭建的临时镜像，详情参考：<a href="https://github.com/flutter/flutter/wiki/Using-Flutter-in-China" target="_blank" rel="noopener">Using Flutter in China](a</a></p>
-<p>在用户变量中再次配置名为PUB_HOSTED_URL”和”FLUTTER_STORAGE_BASE_URL的条目或者在flutter的bin目录下git bash输入<br>、、、<br>export PUB_HOSTED_URL=<a href="https://pub.flutter-io.cn" target="_blank" rel="noopener">https://pub.flutter-io.cn</a><br>export FLUTTER_STORAGE_BASE_URL=<a href="https://storage.flutter-io.cn" target="_blank" rel="noopener">https://storage.flutter-io.cn</a><br>、、、<br><img src="img/first-3.png" alt="配置"><br>完了之后再次输入：flutter doctor，报错提示：<strong>未知的操作系统。无法安装DART SDK</strong><br>、、、<br>$ flutter doctor<br>Downloading Dart SDK from Flutter engine 66072316382837e66aaea518d219192a80839fc<br>Unknown operating system. Cannot install Dart SDK.<br>、、、<br>翻博客,得到解决方案：到Flutter的bin目录,运行 <strong>flutter.bat doctor</strong>而不是flutter doctor ，顺带博主提供的解决问题的GitHub flutter的issue：<a href="https://github.com/flutter/flutter/issues/8860" target="_blank" rel="noopener">https://github.com/flutter/flutter/issues/8860</a><br>从头再来：<br>第一步：到官网下载flutter SDK安装包<br>第二步：在安装包下找到flutter_console.batd运行，输入flutter 命令：flutter doctor安装依赖等<br><img src="img/first-4.png" alt="flutter doctor"><br>第三步：安装android studio（科学上网）<br> 1.到官网自行下载适用自己系统版本的android studio。下载用了蛮久</p>
+<p><img src="http://i2.bvimg.com/673401/c640d547ffdb033e.png" alt="erro2"></p>
+<p>需要设置两个环境变量来升级Flutter并使用中国的pub包存储库 <em>PUB_HOSTED_URL</em>和 <em>FLUTTER_STORAGE_BASE_URL</em>是谷歌为国内开发者搭建的临时镜像，详情参考：<a href="https://github.com/flutter/flutter/wiki/Using-Flutter-in-China" target="_blank" rel="noopener">Using Flutter in China</a><br>在用户变量中再次配置名为PUB_HOSTED_URL”和”FLUTTER_STORAGE_BASE_URL的条目或者在flutter的bin目录下git bash输入<br>、、、<br>export PUB_HOSTED_URL=<a href="https://pub.flutter-io.cn" target="_blank" rel="noopener">https://pub.flutter-io.cn</a><br>export FLUTTER_STORAGE_BASE_URL=<a href="https://storage.flutter-io.cn" target="_blank" rel="noopener">https://storage.flutter-io.cn</a><br>、、、<br><img src="http://i2.bvimg.com/673401/fb359bcc8efdb161.png" alt="配置"><br>完了之后再次输入：flutter doctor，报错提示：<strong>未知的操作系统。无法安装DART SDK</strong><br>、、、<br>$ flutter doctor<br>Downloading Dart SDK from Flutter engine 66072316382837e66aaea518d219192a80839fc<br>Unknown operating system. Cannot install Dart SDK.<br>、、、<br>翻博客,得到解决方案：到Flutter的bin目录,运行 <strong>flutter.bat doctor</strong>而不是flutter doctor ，顺带博主提供的解决问题的GitHub flutter的issue：<a href="https://github.com/flutter/flutter/issues/8860" target="_blank" rel="noopener">https://github.com/flutter/flutter/issues/8860</a>   </p>
+<p>从头再来：<br>第一步：到官网下载flutter SDK安装包<br>第二步：在安装包下找到flutter_console.batd运行，输入flutter 命令：flutter doctor安装依赖等<br><img src="http://i2.bvimg.com/673401/310f4706dc42638e.png" alt="flutter doctor"><br>第三步：安装android studio（科学上网）<br> 1.到官网自行下载适用自己系统版本的android studio。下载用了蛮久</p>
 <blockquote>
-<p>官网:<a href="https://developer.android.com/studio/#downloads" target="_blank" rel="noopener">https://developer.android.com/studio/#downloads</a><br> <img src="img/first-5.png" alt="flutter doctor"><br> 上面网址提供的32位安装包没有install.exe文件，后来我下的是一个win32和64位都适用的一个版本，地址：<br><a href="http://www.android-studio.org/index.php/download/hisversion/169-androidstuio-pan-v1-2" target="_blank" rel="noopener">http://www.android-studio.org/index.php/download/hisversion/169-androidstuio-pan-v1-2</a><br> 2.安装（因为在安装Android Studio的时候，要到google的网站下很多的包，但是谷歌被墙的厉害，所以比较耗时间<br> 3.配置Android studio</p>
+<p>官网:<a href="https://developer.android.com/studio/#downloads" target="_blank" rel="noopener">https://developer.android.com/studio/#downloads</a>   </p>
+</blockquote>
+<p> <img src="http://i2.bvimg.com/673401/e509de66eab9d59b.png" alt="flutter doctor"> </p>
+<p> 上面网址提供的32位安装包没有install.exe文件，后来我下的是一个win32和64位都适用的一个版本，地址：</p>
+<blockquote>
+<p><a href="http://www.android-studio.org/index.php/download/hisversion/169-androidstuio-pan-v1-2" target="_blank" rel="noopener">http://www.android-studio.org/index.php/download/hisversion/169-androidstuio-pan-v1-2</a><br> 2.安装（因为在安装Android Studio的时候，要到google的网站下很多的包，但是谷歌被墙的厉害，所以比较耗时间<br> 3.配置Android studio</p>
 </blockquote>
 
           
