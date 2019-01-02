@@ -290,6 +290,204 @@
   
   
 
+  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/28/first/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="好姑娘">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="好姑娘">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/28/first/" itemprop="url">first</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-28T21:05:58+08:00">
+                2018-12-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/flutter/" itemprop="url" rel="index">
+                    <span itemprop="name">flutter</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="window下flutter安装踩坑篇"><a href="#window下flutter安装踩坑篇" class="headerlink" title="window下flutter安装踩坑篇"></a>window下flutter安装踩坑篇</h1><p>说实话，flutter安装起来真的不容易，哭唧唧，下面是我的安装踩坑篇</p>
+<p>准备工作：科学上网</p>
+<ul>
+<li>1.window系统高于系统高于win7以上64位操作系统</li>
+</ul>
+<ul>
+<li>2.flutter SDK SDK的磁盘空间大于3个G，虽然官方说400M,但是后面还要安装Andriod Studio和虚拟机</li>
+</ul>
+<ul>
+<li>3.需要git环境支持，所以电脑上需要预装git</li>
+</ul>
+<ul>
+<li><p>4.由于在国内开发的原因：预先在放flutter SDK的文件夹下配置好国内可靠本地镜像站点，指示flutter工具使用备用存储位置（翻墙了这步可以省略）</p>
+</li>
+<li><blockquote>
+<p>export PUB_HOSTED_URL=RL=<a href="https://pub.flutter-io.cn" target="_blank" rel="noopener">https://pub.flutter-io.cn</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>export FLUTTER_STORAGE_BASE_URL=RL=<a href="https://storage.flutter-io.cn" target="_blank" rel="noopener">https://storage.flutter-io.cn</a></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>5.如果想在任何地地方都可以使用flutter命令，把flutter 的bin目录配置到用户环境变量的path条目下。 </li>
+</ul>
+<p><strong>第一步：安装flutter SDK</strong><br>看过很多教程都是用git工具先直接在GitHub上clone下来，我也试试</p>
+<blockquote>
+<p>git clone -b beta ta <a href="https://github.com/flutter/flutter.git" target="_blank" rel="noopener">https://github.com/flutter/flutter.git</a> </p>
+</blockquote>
+<p><strong>第二步：配置环境变量，让我们可以直接在系统命令终端上执行flutter命令</strong><br>在新建的文件夹下右键git bash执行clon之后，远程仓库上的flutter SDK已得到，配好系统的环境变量：path   fultter的bin目录路径（小娜输入：evn快速进入系统环境变量配置界面)</p>
+<p>配好变量之后，事实证明克隆下来的flutter安装不行报错显示：“Unknown operating system. Cannot install Dart SDK”，git 下来的才60多MB，真坑</p>
+<p>于是到官网自行下载window版本的安装包</p>
+<blockquote>
+<p><a href="https://flutter.io/docs/get-started/install/windows" target="_blank" rel="noopener">官网：官网：https://flutter.io/docs/get-started/install/windows](ht](s</a></p>
+</blockquote>
+<p><strong>第三步：配置flutter SDK ：执行flutter doctor 检查并更新dart sdk，下载依赖自动安装配置</strong></p>
+<p>打开命令终端（管理员）（或者在flutter的bin目录下打开 git bash执行也是可以的）<br>先看下flutter  –version出现版本号</p>
+<p><img src="img/mg/first-1.png" alt="version"></p>
+<p>然后然后跑：</p>
+<blockquote>
+<p> flutter doctor </p>
+</blockquote>
+<p>按照博客教程走，无任何意外情况下会下载一次载一次dart.zip并顺利解并顺利解压。</p>
+<p>但是，运行flutter doctor 的时候第一次报错，<strong>“erro:Unable to Find git in your path”</strong>，奇怪，我记得以前配过git的path鸭，于是搜索解决方案:在系统环境变量中再次添加git的bin目录下路径</p>
+<p>再次跑flutter doctor ;又一次报错 <strong>“powershell命令提示符出现“不是内部或外部命令，也不是可运行的程序或批处理文件”</strong> ，我………日哦！</p>
+<p>在环境变量 path 中又添加本系统的PowerShell 的路径：C:\Windows\System32\WindowsPowerShell\v1.0</p>
+<p>关闭命令终端吼重新打开再次运行 flutter doctor！然后再次报错 <strong>“Doctor summary (to see all details, run flutter doctor -v):Oops; flutter has exited ed unexpectedly.Sending cra crash report to Google.”</strong> </p>
+<p>哦~ ，flutter 出乎意料的退出了，发送崩溃报告给谷歌~~~~</p>
+<p><img src="img/mg/first-2.png" alt="erro2"></p>
+<p>需要设置两个环境变量来升级Flutter并使用中国的pub包存储库 <em>PUB_HOSTED_URL</em>和 <em>FLUTTER_STORAGE_BASE_URL</em>是谷歌为国内开发者搭建的临时镜像，详情参考：<a href="https://github.com/flutter/flutter/wiki/Using-Flutter-in-China" target="_blank" rel="noopener">Using Flutter in China](a</a></p>
+<p>在用户变量中再次配置名为PUB_H</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+  
+    <div>
+      
+  </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -465,14 +663,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
