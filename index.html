@@ -56,7 +56,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=5.1.4">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
@@ -254,9 +254,41 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -377,8 +409,7 @@
 
       
         
-          
-            <p>说实话，flutter安装起来真的不容易，哭唧唧，下面是我的安装踩坑篇<br>准备工作：科学上网   </p>
+          <p>说实话，flutter安装起来真的不容易，哭唧唧，下面是我的安装踩坑篇<br>准备工作：科学上网   </p>
 <ul>
 <li>window系统高于系统高于win7以上64位操作系统   </li>
 <li>flutter SDK SDK的磁盘空间大于3个G，虽然官方说400M,但是后面还要安装Andriod Studio和虚拟机   </li>
@@ -396,38 +427,13 @@
 <blockquote>
 <p>[官网：<a href="https://flutter.io/docs/get-started/install/windows]" target="_blank" rel="noopener">https://flutter.io/docs/get-started/install/windows]</a> </p>
 </blockquote>
-<hr>
-<p><strong>第三步：配置flutter SDK ：执行flutter doctor 检查并更新dart sdk，下载依赖自动安装配置</strong><br>打开命令终端（管理员）（或者在flutter的bin目录下打开 git bash执行也是可以的）<br>先看下flutter  –version出现版本号<br><img src="http://i2.bvimg.com/673401/85dc77fa5d3a68dd.png" alt="version"><br>然后然后跑：<br><code>flutter doctor</code><br>按照博客教程走，无任何意外情况下会下载一次载一次dart.zip并顺利解并顺利解压。<br>但是，运行flutter doctor 的时候第一次报错，<strong>“erro:Unable to Find git in your path”</strong>，奇怪，我记得以前配过git的path鸭，于是搜索解决方案:在系统环境变量中再次添加git的bin目录下路径 再次跑flutter doctor ;又一次报错 <strong>“powershell命令提示符出现“不是内部或外部命令，也不是可运行的程序或批处理文件”</strong><br>在环境变量 path 中又添加本系统的PowerShell 的路径：C:\Windows\System32\WindowsPowerShell\v1.0<br>关闭命令终端吼重新打开再次运行 flutter doctor然后再次报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Doctor summary (to see all details, run flutter doctor -v):Oops; flutter has exited ed unexpectedly.Sending cra crash report to Google</span><br></pre></td></tr></table></figure></p>
-<p>哦~ ，flutter 出乎意料的退出了，发送崩溃报告给谷歌~~~~   </p>
-<p><img src="http://i2.bvimg.com/673401/c640d547ffdb033e.png" alt="erro2"></p>
-<p>搜到解决方案，需要设置两个环境变量来升级Flutter并使用中国的pub包存储库 <em>PUB_HOSTED_URL</em>和 <em>FLUTTER_STORAGE_BASE_URL</em>是谷歌为国内开发者搭建的临时镜像，详情参考：<a href="https://github.com/flutter/flutter/wiki/Using-Flutter-in-China" target="_blank" rel="noopener">Using Flutter in China</a><br>在用户变量中再次配置名为PUB_HOSTED_URL”和”FLUTTER_STORAGE_BASE_URL的条目或者在flutter的bin目录下git bash输入    </p>
-<pre><code>export PUB_HOSTED_URL=https://pub.flutter-io.cn  
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
-</code></pre><p><img src="http://i2.bvimg.com/673401/fb359bcc8efdb161.png" alt="配置"></p>
-<p>完了之后再次输入：flutter doctor，报错提示：<strong>未知的操作系统。无法安装DART SDK</strong>   </p>
-<pre><code>$ flutter doctor
-Downloading Dart SDK from Flutter engine 66072316382837e66aaea518d219192a80839fc      
-Unknown operating system. Cannot install Dart SDK.
-</code></pre><p>翻博客,得到解决方案：到Flutter的bin目录,运行 <strong>flutter.bat doctor</strong>而不是flutter doctor ，顺带博主提供的解决问题的GitHub flutter的issue：<a href="https://github.com/flutter/flutter/issues/8860" target="_blank" rel="noopener">https://github.com/flutter/flutter/issues/8860</a>  </p>
-<hr>
-<p>从头再来分割线：<br>第一步：到官网下载flutter SDK安装包<br>第二步：在安装包下找到flutter_console.batd运行，输入flutter 命令：flutter doctor安装依赖等<br><img src="http://i2.bvimg.com/673401/310f4706dc42638e.png" alt="flutter doctor"><br>第三步：安装android studio（科学上网）   </p>
-<ol>
-<li><p>到官网自行下载适用自己系统版本的android studio。下载用了蛮久</p>
-<blockquote>
-<p>官网:<a href="https://developer.android.com/studio/#downloads" target="_blank" rel="noopener">https://developer.android.com/studio/#downloads</a>   </p>
-</blockquote>
-<p> <img src="http://i2.bvimg.com/673401/e509de66eab9d59b.png" alt="flutter doctor"> </p>
-<p> 上面网址提供的32位安装包没有install.exe文件，后来我下的是一个win32和64位都适用的一个版本，地址：</p>
-<blockquote>
-<p><a href="http://www.android-studio.org/index.php/download/hisversion/169-androidstuio-pan-v1-2" target="_blank" rel="noopener">http://www.android-studio.org/index.php/download/hisversion/169-androidstuio-pan-v1-2</a>   </p>
-</blockquote>
-<ol start="2">
-<li>安装（因为在安装Android Studio的时候，要到google的网站下很多的包，但是谷歌被墙的厉害，所以比较耗时间<br>3.配置Android studio</li>
-</ol>
-</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/28/first/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -700,13 +706,13 @@ Unknown operating system. Cannot install Dart SDK.
                   <span class="links-of-author-item">
                     <a href="https://juejin.im/timeline" target="_blank" title="掘金">
                       
-                        <i class="fa fa-fw fa-juejin"></i>掘金</a>
+                        <i class="fa fa-fw fa-globe"></i>掘金</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://freecodecamp.cn/sex-cjh" target="_blank" title="FCC">
                       
-                        <i class="fa fa-fw fa-freecodecamp"></i>FCC</a>
+                        <i class="fa fa-fw fa-globe"></i>FCC</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -718,7 +724,7 @@ Unknown operating system. Cannot install Dart SDK.
                   <span class="links-of-author-item">
                     <a href="https://www.zhihu.com/people/hao-gu-niang-79-65/activities" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-zhihu"></i>知乎</a>
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -730,7 +736,7 @@ Unknown operating system. Cannot install Dart SDK.
                   <span class="links-of-author-item">
                     <a href="https://weibo.com/p/1005056440416684/home?from=page_100505&mod=TAB#place" target="_blank" title="微博">
                       
-                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                        <i class="fa fa-fw fa-globe"></i>微博</a>
                   </span>
                 
             </div>
@@ -983,6 +989,323 @@ Unknown operating system. Cannot install Dart SDK.
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
