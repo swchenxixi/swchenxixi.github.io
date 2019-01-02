@@ -81,26 +81,18 @@
 
 
 
-<meta name="description" content="ubuntu16.04如何配置固定IP  1、首先用root用户登陆，然后输入你root的密码。    2、然后编辑interfaces文件，该文件位于/etc/network/下，执行如下命令：vim &amp;nbsp; /etc/network/interfaces，回车，如下图：">
+<meta name="description" content="web前端开发">
 <meta name="keywords" content="前端,个人博客">
-<meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu16.04如何配置固定IP">
-<meta property="og:url" content="http://yoursite.com/2018/09/14/test/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="好姑娘">
+<meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="好姑娘">
-<meta property="og:description" content="ubuntu16.04如何配置固定IP  1、首先用root用户登陆，然后输入你root的密码。    2、然后编辑interfaces文件，该文件位于/etc/network/下，执行如下命令：vim &amp;nbsp; /etc/network/interfaces，回车，如下图：">
+<meta property="og:description" content="web前端开发">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://47.106.132.48:8080/images/1.png">
-<meta property="og:image" content="http://47.106.132.48:8080/images/2.png">
-<meta property="og:image" content="http://47.106.132.48:8080/images/3.png">
-<meta property="og:image" content="http://47.106.132.48:8080/images/4.png">
-<meta property="og:image" content="http://47.106.132.48:8080/images/5.png">
-<meta property="og:image" content="http://47.106.132.48:8080/images/6.png">
-<meta property="og:image" content="http://47.106.132.48:8080/images/7.png">
-<meta property="og:updated_time" content="2019-01-02T02:24:16.107Z">
+<meta property="og:updated_time" content="2019-01-02T07:25:27.331Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ubuntu16.04如何配置固定IP">
-<meta name="twitter:description" content="ubuntu16.04如何配置固定IP  1、首先用root用户登陆，然后输入你root的密码。    2、然后编辑interfaces文件，该文件位于/etc/network/下，执行如下命令：vim &amp;nbsp; /etc/network/interfaces，回车，如下图：">
-<meta name="twitter:image" content="http://47.106.132.48:8080/images/1.png">
+<meta name="twitter:title" content="好姑娘">
+<meta name="twitter:description" content="web前端开发">
 
 
 
@@ -130,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/14/test/">
+  <link rel="canonical" href="http://yoursite.com/about/">
 
 
 
 
 
-  <title>ubuntu16.04如何配置固定IP | 好姑娘</title>
+  <title> | 好姑娘</title>
   
 
 
@@ -281,233 +273,33 @@
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/14/test/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="好姑娘">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/me.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="好姑娘">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
         
         
-          <h1 class="post-title" itemprop="name headline">ubuntu16.04如何配置固定IP</h1>
+          
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-14T10:47:53+08:00">
-                2018-09-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="ubuntu16-04如何配置固定IP"><a href="#ubuntu16-04如何配置固定IP" class="headerlink" title="ubuntu16.04如何配置固定IP"></a>ubuntu16.04如何配置固定IP</h1><hr>
-<ul>
-<li>1、首先用root用户登陆，然后输入你root的密码。</li>
-</ul>
-<hr>
-<ul>
-<li>2、然后编辑interfaces文件，该文件位于/etc/network/下，执行如下命令：<br>vim &nbsp; /etc/network/interfaces，回车，如下图：<br><img src="http://47.106.132.48:8080/images/1.png" alt=""><a id="more"></a>
-</li>
-</ul>
-<hr>
-<ul>
-<li>3、注释：iface eno1 inet dhcp（这个是自由分配ip），添加如下内容：</li>
-</ul>
-<p>iface eth0 inet static</p>
-<p>address 192.168.0.152（注意网段和主机保持一致，例如主机是：192.168.1.3，则可以设置成：192.168.1.<em>）（</em>表示合法范围内的任何数字）</p>
-<p>netmask 255.255.255.0</p>
-<p>gateway 192.168.0.9（注意网关和主机保持一致）<br>如图：</p>
-<p><img src="http://47.106.132.48:8080/images/2.png" alt=""></p>
-<hr>
-<ul>
-<li>4、添加完毕后，保存退出（命令为：wq!），接下来就是配置DNS解析了，DNS解析文件再/etc/resolv.conf。</li>
-</ul>
-<p>执行：vim /etc/resolv.conf，如下图：</p>
-<p><img src="http://47.106.132.48:8080/images/3.png" alt=""></p>
-<hr>
-<ul>
-<li>5、修改该文件为你的网关：<br>nameserver 192.168.0.9<br>如图：<br><img src="http://47.106.132.48:8080/images/4.png" alt=""></li>
-</ul>
-<hr>
-<ul>
-<li>6、改完上面，如果重启的话，还是会变为原来的样子，所以要让其永久改变，</li>
-</ul>
-<p>因此，执行： vim /etc/resolvconf/resolv.conf.d/base，</p>
-<p>如图：</p>
-<p><img src="http://47.106.132.48:8080/images/5.png" alt=""></p>
-<hr>
-<ul>
-<li>7、在里面添加网关地址：<br>nameserver 192.168.0.9<br>如图：</li>
-</ul>
-<p><img src="http://47.106.132.48:8080/images/6.png" alt=""></p>
-<hr>
-<ul>
-<li>8、然后保存退出，并重启服务器（reboot）到这里基本就完成了静态IP的配置了<br>如图：</li>
-</ul>
-<p><img src="http://47.106.132.48:8080/images/7.png" alt=""></p>
-
-      
-    </div>
-    
-    
-    
-
-  
-    <div>
-      
-        
-      
-  </div>
-
-    
-
-    
-
-    
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者：</strong>
-    好姑娘
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/09/14/test/" title="ubuntu16.04如何配置固定IP">http://yoursite.com/2018/09/14/test/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-
       </div>
-    
-
-    <footer class="post-footer">
-      
-
       
       
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/28/first/" rel="prev" title="window下flutter安装踩坑篇">
-                window下flutter安装踩坑篇 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-<span class="jiathis_txt">分享到：</span>
-<a class="jiathis_button_fav">收藏夹</a>
-<a class="jiathis_button_copy">复制网址</a>
-<a class="jiathis_button_email">邮件</a>
-<a class="jiathis_button_weixin">微信</a>
-<a class="jiathis_button_qzone">QQ空间</a>
-<a class="jiathis_button_tqq">腾讯微博</a>
-<a class="jiathis_button_douban">豆瓣</a>
-<a class="jiathis_button_share">一键分享</a>
-
-<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript">
-var jiathis_config={
-  data_track_clickback:true,
-  summary:"",
-  shortUrl:false,
-  hideMore:false
-}
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
-<!-- JiaThis Button END -->
       
     </div>
+    
+    
+    
   </div>
 
 
@@ -540,17 +332,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -683,22 +466,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ubuntu16-04如何配置固定IP"><span class="nav-number">1.</span> <span class="nav-text">ubuntu16.04如何配置固定IP</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
