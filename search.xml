@@ -11,9 +11,4 @@
         <tag>flutter</tag>
       </tags>
   </entry>
-  <entry>
-    <title><![CDATA[ubuntu16.04如何配置固定IP]]></title>
-    <url>%2F2018%2F12%2F26%2Ftest%2F</url>
-    <content type="text"><![CDATA[ubuntu16.04如何配置固定IP 1、首先用root用户登陆，然后输入你root的密码。 2、然后编辑interfaces文件，该文件位于/etc/network/下，执行如下命令：vim &nbsp; /etc/network/interfaces，回车，如下图： 3、注释：iface eno1 inet dhcp（这个是自由分配ip），添加如下内容： iface eth0 inet static address 192.168.0.152（注意网段和主机保持一致，例如主机是：192.168.1.3，则可以设置成：192.168.1.）（表示合法范围内的任何数字） netmask 255.255.255.0 gateway 192.168.0.9（注意网关和主机保持一致）如图： 4、添加完毕后，保存退出（命令为：wq!），接下来就是配置DNS解析了，DNS解析文件再/etc/resolv.conf。 执行：vim /etc/resolv.conf，如下图： 5、修改该文件为你的网关：nameserver 192.168.0.9如图： 6、改完上面，如果重启的话，还是会变为原来的样子，所以要让其永久改变， 因此，执行： vim /etc/resolvconf/resolv.conf.d/base， 如图： 7、在里面添加网关地址：nameserver 192.168.0.9如图： 8、然后保存退出，并重启服务器（reboot）到这里基本就完成了静态IP的配置了如图：]]></content>
-  </entry>
 </search>
