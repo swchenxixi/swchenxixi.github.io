@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-02T08:34:35.021Z</updated>
+  <updated>2019-01-02T08:48:58.505Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/12/28/first/"/>
     <id>http://yoursite.com/2018/12/28/first/</id>
     <published>2018-12-28T13:05:58.000Z</published>
-    <updated>2019-01-02T08:34:35.021Z</updated>
+    <updated>2019-01-02T08:48:58.505Z</updated>
     
     <summary type="html">
     
@@ -37,12 +37,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;第一步：安装flutter SDK&lt;/strong&gt;&lt;br&gt;看过很多教程都是用git工具先直接在GitHub上clone下来，我也试试&lt;br&gt;&lt;code&gt;git clone -b beta ta https://github.com/flutter/flutter.git&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;第二步：配置环境变量，让我们可以直接在系统命令终端上执行flutter命令&lt;/strong&gt;&lt;br&gt;在新建的文件夹下右键git bash执行clon之后，远程仓库上的flutter SDK已得到，配好系统的环境变量：path   fultter的bin目录路径（小娜输入：evn快速进入系统环境变量配置界面)&lt;br&gt;配好变量之后，事实证明克隆下来的flutter安装不行报错显示：&lt;strong&gt;“Unknown operating system. Cannot install Dart SDK”&lt;/strong&gt;，git下来的才60多MB，真坑&lt;br&gt;于是到官网自行下载window版本的安装包&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[官网：&lt;a href=&quot;https://flutter.io/docs/get-started/install/windows]&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://flutter.io/docs/get-started/install/windows]&lt;/a&gt; &lt;/p&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
