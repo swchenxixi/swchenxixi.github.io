@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-01T14:21:09.655Z</updated>
+  <updated>2019-01-02T02:24:16.107Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,18 +17,21 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/12/28/first/"/>
-    <id>http://yoursite.com/2018/12/28/first/</id>
-    <published>2018-12-28T13:05:59.109Z</published>
-    <updated>2019-01-01T14:21:09.655Z</updated>
+    <title>ubuntu16.04如何配置固定IP</title>
+    <link href="http://yoursite.com/2018/09/14/test/"/>
+    <id>http://yoursite.com/2018/09/14/test/</id>
+    <published>2018-09-14T02:47:53.000Z</published>
+    <updated>2019-01-02T02:24:16.107Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;hello&quot;&gt;&lt;a href=&quot;#hello&quot; class=&quot;headerlink&quot; title=&quot;hello&quot;&gt;&lt;/a&gt;hello&lt;/h1&gt;
-      
+      &lt;h1 id=&quot;ubuntu16-04如何配置固定IP&quot;&gt;&lt;a href=&quot;#ubuntu16-04如何配置固定IP&quot; class=&quot;headerlink&quot; title=&quot;ubuntu16.04如何配置固定IP&quot;&gt;&lt;/a&gt;ubuntu16.04如何配置固定IP&lt;/h1&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;1、首先用root用户登陆，然后输入你root的密码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;2、然后编辑interfaces文件，该文件位于/etc/network/下，执行如下命令：&lt;br&gt;vim &amp;nbsp; /etc/network/interfaces，回车，如下图：&lt;br&gt;&lt;img src=&quot;http://47.106.132.48:8080/images/1.png&quot; alt=&quot;&quot;&gt;
     
     </summary>
     
