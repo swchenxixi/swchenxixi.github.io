@@ -1789,14 +1789,16 @@ pre .javascript .function {
   margin-top: 0;
 }
 .site-author-image {
-  height: 150px;
-  width: 150px;
   display: block;
   margin: 0 auto;
   padding: 2px;
   max-width: 120px;
   height: auto;
   border: 1px solid #eee;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   transition: 1.4s all;
 }
 .site-author-image:hover {
@@ -1885,7 +1887,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7078ac;
+  background: #943df5;
 }
 .links-of-blogroll {
   font-size: 13px;
