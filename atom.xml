@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-02T08:48:58.505Z</updated>
+  <updated>2019-01-29T11:47:43.015Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fcc闯关重温知识点整理</title>
+    <link href="http://yoursite.com/2019/01/29/fcc%E9%97%AF%E5%85%B3%E9%87%8D%E6%B8%A9%E7%9F%A5%E8%AF%86%E7%82%B9(bootstrap%E7%AF%87)/"/>
+    <id>http://yoursite.com/2019/01/29/fcc闯关重温知识点(bootstrap篇)/</id>
+    <published>2019-01-29T11:07:41.000Z</published>
+    <updated>2019-01-29T11:47:43.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;—————— Read! Search! Ask!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;bootstrap框架：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;仅需通过添加下列代码到HTML头部文件哪里即可引用bootstrap框架到你的任意应用中：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="bootstrap" scheme="http://yoursite.com/categories/bootstrap/"/>
+    
+    
+      <category term="bootstrap" scheme="http://yoursite.com/tags/bootstrap/"/>
+    
+  </entry>
   
   <entry>
     <title>window下flutter安装踩坑篇</title>
