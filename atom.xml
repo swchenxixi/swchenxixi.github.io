@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-29T11:47:43.015Z</updated>
+  <updated>2019-03-03T16:39:08.934Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fcc闯关重温知识点整理</title>
+    <link href="http://yoursite.com/2019/01/29/FCC%E9%97%AF%E5%85%B3%E9%87%8D%E6%B8%A9%E7%9F%A5%E8%AF%86%E7%82%B9%EF%BC%88Jquery%E7%AF%87%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/01/29/FCC闯关重温知识点（Jquery篇）/</id>
+    <published>2019-01-29T11:07:41.000Z</published>
+    <updated>2019-03-03T16:39:08.934Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;引入jQuery库和Animate-css动画库：&quot;&gt;&lt;a href=&quot;#引入jQuery库和Animate-css动画库：&quot; class=&quot;headerlink&quot; title=&quot;引入jQuery库和Animate.css动画库：&quot;&gt;&lt;/a&gt;引入jQuery库和Animate.css动画库：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;引用JQuery库：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;1.直接引用官网的cdn&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;http://code.jquery.com/jquery-1.10.1.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2.下载jQuery-1.10.1.min.js，引入所在的路径&lt;/em&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Jquery" scheme="http://yoursite.com/categories/Jquery/"/>
+    
+    
+      <category term="Jquery" scheme="http://yoursite.com/tags/Jquery/"/>
+    
+  </entry>
   
   <entry>
     <title>fcc闯关重温知识点整理</title>
