@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-03T16:48:04.432Z</updated>
+  <updated>2019-05-26T15:38:26.527Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue + Vue-cli + Vue-router+ webpack构建web移动端app</title>
+    <link href="http://yoursite.com/2019/03/15/Vue/"/>
+    <id>http://yoursite.com/2019/03/15/Vue/</id>
+    <published>2019-03-15T14:07:21.000Z</published>
+    <updated>2019-05-26T15:38:26.527Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Vue-Vue-cli-Vue-router-webpack构建web移动端app&quot;&gt;&lt;a href=&quot;#Vue-Vue-cli-Vue-router-webpack构建web移动端app&quot; class=&quot;headerlink&quot; title=&quot;Vue + Vue-cli + Vue-router+ webpack构建web移动端app&quot;&gt;&lt;/a&gt;Vue + Vue-cli + Vue-router+ webpack构建web移动端app&lt;/h1&gt;&lt;h2 id=&quot;一、npm安装vue&quot;&gt;&lt;a href=&quot;#一、npm安装vue&quot; class=&quot;headerlink&quot; title=&quot;一、npm安装vue&quot;&gt;&lt;/a&gt;一、npm安装vue&lt;/h2&gt;&lt;p&gt;&lt;code&gt;npm install vue@版本号&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;二、npm安装全局脚手架&quot;&gt;&lt;a href=&quot;#二、npm安装全局脚手架&quot; class=&quot;headerlink&quot; title=&quot;二、npm安装全局脚手架&quot;&gt;&lt;/a&gt;二、npm安装全局脚手架&lt;/h2&gt;&lt;p&gt;&lt;code&gt;npm install -g vue-cli&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;vue脚手架是帮助写好Vue基础代码的工具，其中包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目录结构&lt;/li&gt;
+&lt;li&gt;本地调试&lt;/li&gt;
+&lt;li&gt;代码部署&lt;/li&gt;
+&lt;li&gt;热加载&lt;/li&gt;
+&lt;li&gt;单元测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="vue" scheme="http://yoursite.com/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>fcc闯关重温知识点整理</title>
