@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-26T15:38:26.527Z</updated>
+  <updated>2019-05-26T15:53:37.160Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Vue + Vue-cli + Vue-router+ webpack构建web移动端app</title>
+    <title>Vue+Vue-cli+Vue-router+webpack构建web移动端app</title>
     <link href="http://yoursite.com/2019/03/15/Vue/"/>
     <id>http://yoursite.com/2019/03/15/Vue/</id>
     <published>2019-03-15T14:07:21.000Z</published>
-    <updated>2019-05-26T15:38:26.527Z</updated>
+    <updated>2019-05-26T15:53:37.160Z</updated>
     
     <summary type="html">
     
