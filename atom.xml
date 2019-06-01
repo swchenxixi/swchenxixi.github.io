@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-26T15:53:37.160Z</updated>
+  <updated>2019-06-01T15:02:00.287Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TCP三次握手和四次挥手</title>
+    <link href="http://yoursite.com/2019/04/15/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/"/>
+    <id>http://yoursite.com/2019/04/15/TCP三次握手和四次挥手/</id>
+    <published>2019-04-15T14:44:59.000Z</published>
+    <updated>2019-06-01T15:02:00.287Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;TCP三次握手和四次挥手&quot;&gt;&lt;a href=&quot;#TCP三次握手和四次挥手&quot; class=&quot;headerlink&quot; title=&quot;TCP三次握手和四次挥手&quot;&gt;&lt;/a&gt;TCP三次握手和四次挥手&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/1.png&quot; alt=&quot;bg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TCP(Transmission control protocal)&lt;/strong&gt;:传输控制协议，机器与机器间传输信息的基础协议&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTTP(HyperText Transfer Protocol)&lt;/strong&gt;：超文本传输协议，是web联网的的基础，也是手机联网的常用协议之一，HTTP协议是建立在TCP协议之上的一种应用 ps：（TCP/UDP）&lt;/p&gt;
+&lt;p&gt;服务端每对新的客户端的状态初始表现为Listen状态（即等待响应状态），就像美丽的姑娘正在等待着少年的搭讪&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="TCP" scheme="http://yoursite.com/categories/TCP/"/>
+    
+    
+      <category term="tcp" scheme="http://yoursite.com/tags/tcp/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue+Vue-cli+Vue-router+webpack构建web移动端app</title>
