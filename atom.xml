@@ -95,11 +95,12 @@
     <link href="http://yoursite.com/2019/03/15/Vue/"/>
     <id>http://yoursite.com/2019/03/15/Vue/</id>
     <published>2019-03-15T14:07:21.000Z</published>
-    <updated>2019-05-26T15:53:37.160Z</updated>
+    <updated>2019-06-08T15:02:03.856Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Vue-Vue-cli-Vue-router-webpack构建web移动端app&quot;&gt;&lt;a href=&quot;#Vue-Vue-cli-Vue-router-webpack构建web移动端app&quot; class=&quot;headerlink&quot; title=&quot;Vue + Vue-cli + Vue-router+ webpack构建web移动端app&quot;&gt;&lt;/a&gt;Vue + Vue-cli + Vue-router+ webpack构建web移动端app&lt;/h1&gt;&lt;h2 id=&quot;一、npm安装vue&quot;&gt;&lt;a href=&quot;#一、npm安装vue&quot; class=&quot;headerlink&quot; title=&quot;一、npm安装vue&quot;&gt;&lt;/a&gt;一、npm安装vue&lt;/h2&gt;&lt;p&gt;&lt;code&gt;npm install vue@版本号&lt;/code&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;Vue-Vue-cli-Vue-router-webpack构建web移动端app&quot;&gt;&lt;a href=&quot;#Vue-Vue-cli-Vue-router-webpack构建web移动端app&quot; class=&quot;headerlink&quot; title=&quot;Vue + Vue-cli + Vue-router+ webpack构建web移动端app&quot;&gt;&lt;/a&gt;Vue + Vue-cli + Vue-router+ webpack构建web移动端app&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/69.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一、npm安装vue&quot;&gt;&lt;a href=&quot;#一、npm安装vue&quot; class=&quot;headerlink&quot; title=&quot;一、npm安装vue&quot;&gt;&lt;/a&gt;一、npm安装vue&lt;/h2&gt;&lt;p&gt;&lt;code&gt;npm install vue@版本号&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&quot;二、npm安装全局脚手架&quot;&gt;&lt;a href=&quot;#二、npm安装全局脚手架&quot; class=&quot;headerlink&quot; title=&quot;二、npm安装全局脚手架&quot;&gt;&lt;/a&gt;二、npm安装全局脚手架&lt;/h2&gt;&lt;p&gt;&lt;code&gt;npm install -g vue-cli&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;vue脚手架是帮助写好Vue基础代码的工具，其中包括：&lt;/p&gt;
@@ -126,11 +127,12 @@
     <link href="http://yoursite.com/2019/02/28/FCC%E9%97%AF%E5%85%B3%E9%87%8D%E6%B8%A9%E7%9F%A5%E8%AF%86%E7%82%B9%EF%BC%88Jquery%E7%AF%87%EF%BC%89/"/>
     <id>http://yoursite.com/2019/02/28/FCC闯关重温知识点（Jquery篇）/</id>
     <published>2019-02-28T12:09:41.000Z</published>
-    <updated>2019-03-03T16:48:04.432Z</updated>
+    <updated>2019-06-08T15:02:57.626Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;引入jQuery库和Animate-css动画库：&quot;&gt;&lt;a href=&quot;#引入jQuery库和Animate-css动画库：&quot; class=&quot;headerlink&quot; title=&quot;引入jQuery库和Animate.css动画库：&quot;&gt;&lt;/a&gt;引入jQuery库和Animate.css动画库：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;引用JQuery库：&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/19.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;引入jQuery库和Animate-css动画库：&quot;&gt;&lt;a href=&quot;#引入jQuery库和Animate-css动画库：&quot; class=&quot;headerlink&quot; title=&quot;引入jQuery库和Animate.css动画库：&quot;&gt;&lt;/a&gt;引入jQuery库和Animate.css动画库：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;引用JQuery库：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;1.直接引用官网的cdn&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;http://code.jquery.com/jquery-1.10.1.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2.下载jQuery-1.10.1.min.js，引入所在的路径&lt;/em&gt;&lt;/p&gt;
@@ -149,11 +151,12 @@
     <link href="http://yoursite.com/2019/01/29/fcc%E9%97%AF%E5%85%B3%E9%87%8D%E6%B8%A9%E7%9F%A5%E8%AF%86%E7%82%B9(bootstrap%E7%AF%87)/"/>
     <id>http://yoursite.com/2019/01/29/fcc闯关重温知识点(bootstrap篇)/</id>
     <published>2019-01-29T11:07:41.000Z</published>
-    <updated>2019-01-29T11:47:43.015Z</updated>
+    <updated>2019-06-08T15:04:01.086Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;—————— Read! Search! Ask!&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/16.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;—————— Read! Search! Ask!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;bootstrap框架：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;仅需通过添加下列代码到HTML头部文件哪里即可引用bootstrap框架到你的任意应用中：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
