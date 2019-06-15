@@ -312,6 +312,208 @@
   
   
 
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/15/前端XSS攻击/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="好姑娘">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/e.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="好姑娘">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/15/前端XSS攻击/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-15T22:11:09+08:00">
+                2019-06-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.jpg" alt="banner"></p>
+<p><strong>定义：XXS攻击（跨域脚本攻击），Crose Site Scripting</strong><br>指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。</p>
+<p><strong>类型：XXS攻击的类型一般分为以下三种：</strong></p>
+<p style="color:red">1.存储型XXS</p><br><p style="color:red">2.反射型XXS攻击</p><br><p style="color:red">3.dom型XXS</p>
+
+<ul>
+<li><p><strong>存储型XXS：</strong></p>
+<p>  1.攻击者在用户输入时插入恶意代码，将恶意代码提交到目标数据库里</p>
+<p>  2.用户访问目标网站时提取数据库信息，存在数据库里的恶意代码被拼接返回给浏览器</p>
+<p>  3.浏览器响应执行，并且执行恶意代码</p>
+<p>  4.攻击者窃取用户信息，并发送到攻击者的网站，达到攻击目的</p>
+<p>  <strong>解决方案：</strong></p>
+<p>  存储型XXS攻击主要是通过在用户的输入里嵌入恶意代码，从而造成XXS攻击。</p>
+  <p style="color:#f00">进行HTMLencode处理 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制:<br>  JavaScript、 alert 、onclick等</p>
+
+  <p style="background:#d5e220;color:#000"><br>  A：前端提交前转码：encodeHtml(value)</p><br>  <p style="background:#d5e220;color:#000"><br>  B：后端java转码：Encoder.encodeHtml(value)；如果是Param类，直接使用.getHtmlString(key)。<br>  </p>
+</li>
+<li><p><strong>反射型XXS攻击</strong></p>
+<p>  1.攻击者制造特殊URL，用户打开带有恶意代码的 URL。</p>
+<p>  2.用户访问目标网站，服务端截取url并拼接返回给浏览器</p>
+<p>  3.浏览器响应执行携带攻击代码的URL</p>
+<p>  4.攻击者窃取用户信息，并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。</p>
+<p>  <strong>解决方案：</strong></p>
+<p>  反射型XXS攻击与存储型XXS攻击的主要区别在于：存储型攻击是攻击代码存储在数据库，反射型则是存储在URL中；相同点是：同样是在服务端造成的XXS攻击。</p>
+  <p style="color:#f00">数据提交时一定要对传参数的数进行URLencode处理 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：JavaScript、 alert 、onclick等</p>
+
+  <p style="background:#d5e220;color:#000"><br>  前端提交参数前：encodeUrl(url);</p><br>  <p style="background:#d5e220;color:#000"><br> B：后端拿到数据进行编码：Encoder.encodeURL(url);<br>  </p>
+
+
+
+
+</li>
+</ul>
+<ul>
+<li><strong>dom型XXS攻击</strong></li>
+</ul>
+<p>   1.攻击者构造出特殊的 URL，其中包含恶意代码，用户打开带有恶意代码的 URL。</p>
+<pre><code>2.用户浏览器接收到响应后解析执行，前端 JavaScript 取出 URL 中的恶意代码并执行。
+
+3.恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。
+
+**解决方案：**
+
+dom型XXS攻击与前两者攻击的不同之处在于dom型攻击是发生在前端取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。
+
+&lt;p style=&quot;color:#f00&quot;&gt;a.在append前，进行keywordCond编码 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：&lt;JavaScript&gt;&lt;alert&gt;onclick等&lt;/p&gt;
+
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+A：在append前，将keywordCond进行编码
+keywordCond = encodeUrlComponent(keywordCond)；
+scripts.append(keywordCond)&lt;/p&gt;
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+B：后台调用方法：
+String keywordCond = Encoder.encodeHtmlJs(keywordCond);
+&lt;/p&gt;
+&lt;p style=&quot;color:#f00&quot;&gt;b.将重要的cookie标记为http only,   这样的话当浏览器向Web服务器发起请求的时就会带上cookie字段，但是在脚本中却不能访问这个cookie，这样就避免了XSS攻击利用JavaScript的document.cookie获取cookie。&lt;/p&gt;
+
+&lt;p style=&quot;color:red&quot;&gt;eg:&lt;/p&gt;
+
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+A：Tomcat服务器，在Tomcat下的conf的web.xml设置如下信息。
+&lt;/p&gt;
+
+    &lt;session-config&gt;
+    &lt;cookie-config&gt;
+    &lt;http-only&gt;true&lt;/http-only&gt;
+    &lt;/cookie-config&gt;
+    &lt;session-config&gt;
+
+
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+</code></pre><p>   B：resin服务器，在resin.conf下设置session信息。<br>    </p><br>        <session-config><br>        <enable-cookies>true</enable-cookies><br>        <cookie-config><br>        <http-only>true</http-only><br>        </cookie-config><br>        </session-config><p></p>
+<ul>
+<li><strong>总结：</strong></li>
+</ul>
+<p>前端和后端尽可能对提交数据做好过滤。要注意在正确的地方使用正确的编码方式，有时为了防御XSS，在一个地方我们需要联合HTMLEncode、JavaScriptEncode、URLEncode进行编码，甚至是叠加，并不是固定一种方式编码，具体情况具体分析。</p>
+<p style="background:#f99632;color:#000">针对XSS攻击类型，我们日常开发需要做好以下部分：</p><br><p style="background:#f99632;color:#000"><br>1. 在HTML标签、属性中输出时，用HTMLEncode。<br></p><br><p style="background:#f99632;color:#000"><br>2. 在script标签中输出时，用JavaScriptEncode。<br></p><br><p style="background:#f99632;color:#000"><br>3. 在地址中输出一般如果变量是整个URL，则用URLEncode。<br></p><br><p style="background:#f99632;color:#000"><br>4. 在提交数据前，做一些正则校验，或者在输入框中做一些限制<br></p>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+  
+    <div>
+      
+  </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
   <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -1456,7 +1658,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
