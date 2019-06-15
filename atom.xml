@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-15T14:11:09.736Z</updated>
+  <updated>2019-06-15T16:28:43.792Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,23 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/06/15/%E5%89%8D%E7%AB%AFXSS%E6%94%BB%E5%87%BB/"/>
-    <id>http://yoursite.com/2019/06/15/前端XSS攻击/</id>
-    <published>2019-06-15T14:11:09.726Z</published>
-    <updated>2019-06-15T14:11:09.736Z</updated>
+    <title>前端XSS攻击</title>
+    <link href="http://yoursite.com/2019/06/16/%E5%89%8D%E7%AB%AFXSS%E6%94%BB%E5%87%BB/"/>
+    <id>http://yoursite.com/2019/06/16/前端XSS攻击/</id>
+    <published>2019-06-15T16:28:10.000Z</published>
+    <updated>2019-06-15T16:28:43.792Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;定义：XXS攻击（跨域脚本攻击），Crose Site 
-      
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义：XSS攻击（跨域脚本攻击），Crose Site Scripting&lt;/strong&gt;&lt;br&gt;指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。&lt;/p&gt;
     
     </summary>
     
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="前端,个人博客">
+  <meta name="keywords" content="javascript,">
 
 
 
@@ -81,17 +81,20 @@
 
 
 
-<meta name="description" content="web前端开发">
-<meta name="keywords" content="前端,个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="好姑娘">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="定义：XSS攻击（跨域脚本攻击），Crose Site Scripting指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端XSS攻击">
+<meta property="og:url" content="http://yoursite.com/2019/06/16/前端XSS攻击/index.html">
 <meta property="og:site_name" content="好姑娘">
-<meta property="og:description" content="web前端开发">
+<meta property="og:description" content="定义：XSS攻击（跨域脚本攻击），Crose Site Scripting指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.jpg">
+<meta property="og:updated_time" content="2019-06-15T16:28:43.792Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="好姑娘">
-<meta name="twitter:description" content="web前端开发">
+<meta name="twitter:title" content="前端XSS攻击">
+<meta name="twitter:description" content="定义：XSS攻击（跨域脚本攻击），Crose Site Scripting指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.jpg">
 
 
 
@@ -121,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/16/前端XSS攻击/">
 
 
 
 
 
-  <title>归档 | 好姑娘</title>
+  <title>前端XSS攻击 | 好姑娘</title>
   
 
 
@@ -146,7 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -302,322 +305,330 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/16/前端XSS攻击/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="好姑娘">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/e.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="好姑娘">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">前端XSS攻击</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-16T00:28:10+08:00">
+                2019-06-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 8 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/06/16/前端XSS攻击/" itemprop="url">
-              
-                <span itemprop="name">前端XSS攻击</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-16T00:28:10+08:00" content="2019-06-16">
-          06-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05/20/Vue2/" itemprop="url">
-              
-                <span itemprop="name">Vue2</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-20T00:25:18+08:00" content="2019-05-20">
-          05-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05/05/px与rem的单位换算/" itemprop="url">
-              
-                <span itemprop="name">px与rem单位换算</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-05T23:48:11+08:00" content="2019-05-05">
-          05-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/15/TCP三次握手和四次挥手/" itemprop="url">
-              
-                <span itemprop="name">TCP三次握手和四次挥手</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-15T22:44:59+08:00" content="2019-04-15">
-          04-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/15/Vue/" itemprop="url">
-              
-                <span itemprop="name">Vue+Vue-cli+Vue-router+webpack构建web移动端app</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-15T22:07:21+08:00" content="2019-03-15">
-          03-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/28/FCC闯关重温知识点（Jquery篇）/" itemprop="url">
-              
-                <span itemprop="name">fcc闯关重温知识点整理</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-28T20:09:41+08:00" content="2019-02-28">
-          02-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/29/fcc闯关重温知识点(bootstrap篇)/" itemprop="url">
-              
-                <span itemprop="name">fcc闯关重温知识点整理</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-29T19:07:41+08:00" content="2019-01-29">
-          01-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/28/first/" itemprop="url">
-              
-                <span itemprop="name">window下flutter安装踩坑篇</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-28T21:05:58+08:00" content="2018-12-28">
-          12-28
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.jpg" alt="banner"></p>
+<p><strong>定义：XSS攻击（跨域脚本攻击），Crose Site Scripting</strong><br>指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。</p>
+<a id="more"></a>
+<p><strong>类型：XSS攻击的类型一般分为以下三种：</strong></p>
+<p style="color:red">1.存储型XXS</p><br><p style="color:red">2.反射型XXS攻击</p><br><p style="color:red">3.dom型XXS</p>
+
+<ul>
+<li><p><strong>存储型XSS：</strong></p>
+<p>  1.攻击者在用户输入时插入恶意代码，将恶意代码提交到目标数据库里</p>
+<p>  2.用户访问目标网站时提取数据库信息，存在数据库里的恶意代码被拼接返回给浏览器</p>
+<p>  3.浏览器响应执行，并且执行恶意代码</p>
+<p>  4.攻击者窃取用户信息，并发送到攻击者的网站，达到攻击目的</p>
+<p>  <strong>解决方案：</strong></p>
+<p>  存储型XSS攻击主要是通过在用户的输入里嵌入恶意代码，从而造成XXS攻击。</p>
+  <p style="color:#f00">进行HTMLencode处理 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制:<br>  JavaScript、 alert 、onclick等</p>
+
+  <p style="background:#d5e220;color:#000"><br>  A：前端提交前转码：encodeHtml(value)</p><br>  <p style="background:#d5e220;color:#000"><br>  B：后端java转码：Encoder.encodeHtml(value)；如果是Param类，直接使用.getHtmlString(key)。<br>  </p>
+</li>
+<li><p><strong>反射型XSS攻击</strong></p>
+<p>  1.攻击者制造特殊URL，用户打开带有恶意代码的 URL。</p>
+<p>  2.用户访问目标网站，服务端截取url并拼接返回给浏览器</p>
+<p>  3.浏览器响应执行携带攻击代码的URL</p>
+<p>  4.攻击者窃取用户信息，并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。</p>
+<p>  <strong>解决方案：</strong></p>
+<p>  反射型XSS攻击与存储型XXS攻击的主要区别在于：存储型攻击是攻击代码存储在数据库，反射型则是存储在URL中；相同点是：同样是在服务端造成的XXS攻击。</p>
+  <p style="color:#f00">数据提交时一定要对传参数的数进行URLencode处理 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：JavaScript、 alert 、onclick等</p>
+
+  <p style="background:#d5e220;color:#000"><br>  前端提交参数前：encodeUrl(url);</p><br>  <p style="background:#d5e220;color:#000"><br> B：后端拿到数据进行编码：Encoder.encodeURL(url);<br>  </p>
+
+
+
+
+</li>
+</ul>
+<ul>
+<li><strong>dom型XSS攻击</strong></li>
+</ul>
+<p>   1.攻击者构造出特殊的 URL，其中包含恶意代码，用户打开带有恶意代码的 URL。</p>
+<pre><code>2.用户浏览器接收到响应后解析执行，前端 JavaScript 取出 URL 中的恶意代码并执行。
+
+3.恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。
+
+**解决方案：**
+
+dom型XSS攻击与前两者攻击的不同之处在于dom型攻击是发生在前端取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。
+
+&lt;p style=&quot;color:#f00&quot;&gt;a.在append前，进行keywordCond编码 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：&lt;JavaScript&gt;&lt;alert&gt;onclick等&lt;/p&gt;
+
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+A：在append前，将keywordCond进行编码
+keywordCond = encodeUrlComponent(keywordCond)；
+scripts.append(keywordCond)&lt;/p&gt;
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+B：后台调用方法：
+String keywordCond = Encoder.encodeHtmlJs(keywordCond);
+&lt;/p&gt;
+&lt;p style=&quot;color:#f00&quot;&gt;b.将重要的cookie标记为http only,   这样的话当浏览器向Web服务器发起请求的时就会带上cookie字段，但是在脚本中却不能访问这个cookie，这样就避免了XSS攻击利用JavaScript的document.cookie获取cookie。&lt;/p&gt;
+
+&lt;p style=&quot;color:red&quot;&gt;eg:&lt;/p&gt;
+
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+A：Tomcat服务器，在Tomcat下的conf的web.xml设置如下信息。
+&lt;/p&gt;
+
+    &lt;session-config&gt;
+    &lt;cookie-config&gt;
+    &lt;http-only&gt;true&lt;/http-only&gt;
+    &lt;/cookie-config&gt;
+    &lt;session-config&gt;
+
+
+&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
+</code></pre><p>   B：resin服务器，在resin.conf下设置session信息。<br>    </p><br>        <session-config><br>        <enable-cookies>true</enable-cookies><br>        <cookie-config><br>        <http-only>true</http-only><br>        </cookie-config><br>        </session-config><p></p>
+<ul>
+<li><strong>总结：</strong></li>
+</ul>
+<p>前端和后端尽可能对提交数据做好过滤。要注意在正确的地方使用正确的编码方式，有时为了防御XSS，在一个地方我们需要联合HTMLEncode、JavaScriptEncode、URLEncode进行编码，甚至是叠加，并不是固定一种方式编码，具体情况具体分析。</p>
+<p style="background:#f99632;color:#000">针对XSS攻击类型，我们日常开发需要做好以下部分：</p><br><p style="background:#f99632;color:#000"><br>1. 在HTML标签、属性中输出时，用HTMLEncode。<br></p><br><p style="background:#f99632;color:#000"><br>2. 在script标签中输出时，用JavaScriptEncode。<br></p><br><p style="background:#f99632;color:#000"><br>3. 在地址中输出一般如果变量是整个URL，则用URLEncode。<br></p><br><p style="background:#f99632;color:#000"><br>4. 在提交数据前，做一些正则校验，或者在输入框中做一些限制<br></p>
 
 
       
-
     </div>
+    
+    
+    
+
+  
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>前端XSS攻击</p>
+  <p><span>文章作者:</span>好姑娘</p>
+  <p><span>发布时间:</span>2019年06月16日 - 00:28:10</p>
+  <p><span>最后更新:</span>2019年06月16日 - 00:28:43</p>
+  <p><span>原始链接:</span><a href="/2019/06/16/前端XSS攻击/" title="前端XSS攻击">http://yoursite.com/2019/06/16/前端XSS攻击/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/06/16/前端XSS攻击/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
+  </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    好姑娘
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2019/06/16/前端XSS攻击/" title="前端XSS攻击">http://yoursite.com/2019/06/16/前端XSS攻击/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/20/Vue2/" rel="next" title="Vue2">
+                <i class="fa fa-chevron-left"></i> Vue2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -625,6 +636,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -949,6 +964,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
