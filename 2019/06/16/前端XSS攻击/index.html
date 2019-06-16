@@ -90,7 +90,7 @@
 <meta property="og:description" content="定义：XSS攻击（跨域脚本攻击），Crose Site Scripting指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.jpg">
-<meta property="og:updated_time" content="2019-06-15T16:28:43.792Z">
+<meta property="og:updated_time" content="2019-06-16T10:08:23.080Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端XSS攻击">
 <meta name="twitter:description" content="定义：XSS攻击（跨域脚本攻击），Crose Site Scripting指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。">
@@ -436,52 +436,38 @@
   <p style="color:#f00">数据提交时一定要对传参数的数进行URLencode处理 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：JavaScript、 alert 、onclick等</p>
 
   <p style="background:#d5e220;color:#000"><br>  前端提交参数前：encodeUrl(url);</p><br>  <p style="background:#d5e220;color:#000"><br> B：后端拿到数据进行编码：Encoder.encodeURL(url);<br>  </p>
+</li>
+<li><p><strong>dom型XSS攻击</strong></p>
+<p> 1.攻击者构造出特殊的 URL，其中包含恶意代码，用户打开带有恶意代码的 URL。</p>
+<p>  2.用户浏览器接收到响应后解析执行，前端 JavaScript 取出 URL 中的恶意代码并执行。</p>
+<p>  3.恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。</p>
+<p>  <strong>解决方案：</strong></p>
+<p>  dom型XSS攻击与前两者攻击的不同之处在于dom型攻击是发生在前端取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。</p>
+  <p style="color:#f00">a.在append前，进行keywordCond编码 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：<javascript><alert>onclick等</alert></javascript></p>
 
+  <p style="background:#d5e220;color:#000"><br>  A：在append前，将keywordCond进行编码<br>  keywordCond = encodeUrlComponent(keywordCond)；<br>  scripts.append(keywordCond)</p><br>  <p style="background:#d5e220;color:#000"><br>  B：后台调用方法：<br>  String keywordCond = Encoder.encodeHtmlJs(keywordCond);<br>  </p><br>  <p style="color:#f00">b.将重要的cookie标记为http only,   这样的话当浏览器向Web服务器发起请求的时就会带上cookie字段，但是在脚本中却不能访问这个cookie，这样就避免了XSS攻击利用JavaScript的document.cookie获取cookie。</p>
 
+  <p style="color:red">eg:</p>
+
+  <p style="background:#d5e220;color:#000"><br>  A：Tomcat服务器，在Tomcat下的conf的web.xml设置如下信息。<br>  </p>
+
+<pre><code>&lt;session-config&gt;
+&lt;cookie-config&gt;
+&lt;http-only&gt;true&lt;/http-only&gt;
+&lt;/cookie-config&gt;
+&lt;session-config&gt;
+</code></pre>  <p style="background:#d5e220;color:#000"><br>  B：resin服务器，在resin.conf下设置session信息。<br>  </p>
 
 
 </li>
 </ul>
-<ul>
-<li><strong>dom型XSS攻击</strong></li>
-</ul>
-<p>   1.攻击者构造出特殊的 URL，其中包含恶意代码，用户打开带有恶意代码的 URL。</p>
-<pre><code>2.用户浏览器接收到响应后解析执行，前端 JavaScript 取出 URL 中的恶意代码并执行。
-
-3.恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。
-
-**解决方案：**
-
-dom型XSS攻击与前两者攻击的不同之处在于dom型攻击是发生在前端取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。
-
-&lt;p style=&quot;color:#f00&quot;&gt;a.在append前，进行keywordCond编码 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：&lt;JavaScript&gt;&lt;alert&gt;onclick等&lt;/p&gt;
-
-&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
-A：在append前，将keywordCond进行编码
-keywordCond = encodeUrlComponent(keywordCond)；
-scripts.append(keywordCond)&lt;/p&gt;
-&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
-B：后台调用方法：
-String keywordCond = Encoder.encodeHtmlJs(keywordCond);
-&lt;/p&gt;
-&lt;p style=&quot;color:#f00&quot;&gt;b.将重要的cookie标记为http only,   这样的话当浏览器向Web服务器发起请求的时就会带上cookie字段，但是在脚本中却不能访问这个cookie，这样就避免了XSS攻击利用JavaScript的document.cookie获取cookie。&lt;/p&gt;
-
-&lt;p style=&quot;color:red&quot;&gt;eg:&lt;/p&gt;
-
-&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
-A：Tomcat服务器，在Tomcat下的conf的web.xml设置如下信息。
-&lt;/p&gt;
-
-    &lt;session-config&gt;
-    &lt;cookie-config&gt;
-    &lt;http-only&gt;true&lt;/http-only&gt;
-    &lt;/cookie-config&gt;
-    &lt;session-config&gt;
-
-
-&lt;p style=&quot;background:#d5e220;color:#000&quot;&gt;
-</code></pre><p>   B：resin服务器，在resin.conf下设置session信息。<br>    </p><br>        <session-config><br>        <enable-cookies>true</enable-cookies><br>        <cookie-config><br>        <http-only>true</http-only><br>        </cookie-config><br>        </session-config><p></p>
-<ul>
+<pre><code>&lt;session-config&gt;
+&lt;enable-cookies&gt;true&lt;/enable-cookies&gt;
+&lt;cookie-config&gt;
+&lt;http-only&gt;true&lt;/http-only&gt;
+&lt;/cookie-config&gt;
+&lt;/session-config&gt;
+</code></pre><ul>
 <li><strong>总结：</strong></li>
 </ul>
 <p>前端和后端尽可能对提交数据做好过滤。要注意在正确的地方使用正确的编码方式，有时为了防御XSS，在一个地方我们需要联合HTMLEncode、JavaScriptEncode、URLEncode进行编码，甚至是叠加，并不是固定一种方式编码，具体情况具体分析。</p>
@@ -509,7 +495,7 @@ A：Tomcat服务器，在Tomcat下的conf的web.xml设置如下信息。
   <p><span>本文标题:</span>前端XSS攻击</p>
   <p><span>文章作者:</span>好姑娘</p>
   <p><span>发布时间:</span>2019年06月16日 - 00:28:10</p>
-  <p><span>最后更新:</span>2019年06月16日 - 00:28:43</p>
+  <p><span>最后更新:</span>2019年06月16日 - 18:08:23</p>
   <p><span>原始链接:</span><a href="/2019/06/16/前端XSS攻击/" title="前端XSS攻击">http://yoursite.com/2019/06/16/前端XSS攻击/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/06/16/前端XSS攻击/" aria-label="复制成功！"></i></span>
   </p>
