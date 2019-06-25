@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[var const let class]]></title>
+    <url>%2F2019%2F06%2F23%2Fvar%20const%20%20let%20class%2F</url>
+    <content type="text"><![CDATA[const 和 let,class 都是在定义所在范围内有效，不会被外部环境所影响（暂时性死区），即使是定义全局变量，该属性也不属于GO的属性，而var 则可以变量提升，在function内声明一个全局变量，该变量依旧是GO的属性，从而污染外部环境，var的这一特性的引用如for循环实现计数 var 可以先使用后定义不会报错，而const 和let class 必须先定义后使用 const 声明的简单变量或者常量，是只读的且必须在定义的同时赋值初始化，否则会报错，猜测原理是： js引擎在处理变量的时候，有三大要素：变量名、内存空间和内存地址，当内存空间里的值被改变时，即重新定义赋值变量，新的值会覆盖旧的值（代码上看起来像覆盖），其实是js引擎重新分配另一个空间给新的值，并与内存地址绑定，到了某个时间，js引擎会回收掉旧的空间，而const在定义赋值简单变量的时候，与对应的内存地址与存的值是不可更改的，所以无法重新定义赋值 但是const在声明复杂变量时(比如数组或者对象)，初始化绑定的指针地址是不可更改的，但里边的数据可以更改]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[前端XSS攻击]]></title>
     <url>%2F2019%2F06%2F16%2F%E5%89%8D%E7%AB%AFXSS%E6%94%BB%E5%87%BB%2F</url>
     <content type="text"><![CDATA[定义：XSS攻击（跨域脚本攻击），Crose Site Scripting指攻击者在网页中嵌入脚本代码，如JS代码，当用户访问网页时，脚本在用户的浏览器上执行，从而窃取用户的cookie信息、导航到恶意网站、携带木马等 以达到攻击者的操作目的。大部分的xss漏洞都是由于没有处理好用户的输入，导致攻击脚本在浏览器中执行，这就是跨站脚本漏洞的根源。 类型：XSS攻击的类型一般分为以下三种： 1.存储型XXS2.反射型XXS攻击3.dom型XXS 存储型XSS： 1.攻击者在用户输入时插入恶意代码，将恶意代码提交到目标数据库里 2.用户访问目标网站时提取数据库信息，存在数据库里的恶意代码被拼接返回给浏览器 3.浏览器响应执行，并且执行恶意代码 4.攻击者窃取用户信息，并发送到攻击者的网站，达到攻击目的 解决方案： 存储型XSS攻击主要是通过在用户的输入里嵌入恶意代码，从而造成XXS攻击。 进行HTMLencode处理 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制: JavaScript、 alert 、onclick等 A：前端提交前转码：encodeHtml(value) B：后端java转码：Encoder.encodeHtml(value)；如果是Param类，直接使用.getHtmlString(key)。 反射型XSS攻击 1.攻击者制造特殊URL，用户打开带有恶意代码的 URL。 2.用户访问目标网站，服务端截取url并拼接返回给浏览器 3.浏览器响应执行携带攻击代码的URL 4.攻击者窃取用户信息，并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。 解决方案： 反射型XSS攻击与存储型XXS攻击的主要区别在于：存储型攻击是攻击代码存储在数据库，反射型则是存储在URL中；相同点是：同样是在服务端造成的XXS攻击。 数据提交时一定要对传参数的数进行URLencode处理 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：JavaScript、 alert 、onclick等 前端提交参数前：encodeUrl(url); B：后端拿到数据进行编码：Encoder.encodeURL(url); dom型XSS攻击 1.攻击者构造出特殊的 URL，其中包含恶意代码，用户打开带有恶意代码的 URL。 2.用户浏览器接收到响应后解析执行，前端 JavaScript 取出 URL 中的恶意代码并执行。 3.恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网 站接口执行攻击者指定的操作。 解决方案： dom型XSS攻击与前两者攻击的不同之处在于dom型攻击是发生在前端取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。 a.在append前，进行keywordCond编码 / 对用户输入做限制，杜绝攻击者插入攻击代码的可能如：正则限制，长度限制，关键字限制：onclick等 A：在append前，将keywordCond进行编码 keywordCond = encodeUrlComponent(keywordCond)； scripts.append(keywordCond) B：后台调用方法： String keywordCond = Encoder.encodeHtmlJs(keywordCond); b.将重要的cookie标记为http only, 这样的话当浏览器向Web服务器发起请求的时就会带上cookie字段，但是在脚本中却不能访问这个cookie，这样就避免了XSS攻击利用JavaScript的document.cookie获取cookie。 eg: A：Tomcat服务器，在Tomcat下的conf的web.xml设置如下信息。 &lt;session-config&gt; &lt;cookie-config&gt; &lt;http-only&gt;true&lt;/http-only&gt; &lt;/cookie-config&gt; &lt;session-config&gt; B：resin服务器，在resin.conf下设置session信息。 &lt;session-config&gt; &lt;enable-cookies&gt;true&lt;/enable-cookies&gt; &lt;cookie-config&gt; &lt;http-only&gt;true&lt;/http-only&gt; &lt;/cookie-config&gt; &lt;/session-config&gt; 总结： 前端和后端尽可能对提交数据做好过滤。要注意在正确的地方使用正确的编码方式，有时为了防御XSS，在一个地方我们需要联合HTMLEncode、JavaScriptEncode、URLEncode进行编码，甚至是叠加，并不是固定一种方式编码，具体情况具体分析。 针对XSS攻击类型，我们日常开发需要做好以下部分：1. 在HTML标签、属性中输出时，用HTMLEncode。2. 在script标签中输出时，用JavaScriptEncode。3. 在地址中输出一般如果变量是整个URL，则用URLEncode。4. 在提交数据前，做一些正则校验，或者在输入框中做一些限制]]></content>

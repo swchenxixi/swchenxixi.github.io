@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-16T10:08:23.080Z</updated>
+  <updated>2019-06-25T15:41:38.793Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>var const let class</title>
+    <link href="http://yoursite.com/2019/06/23/var%20const%20%20let%20class/"/>
+    <id>http://yoursite.com/2019/06/23/var const  let class/</id>
+    <published>2019-06-22T16:00:06.000Z</published>
+    <updated>2019-06-25T15:41:38.793Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/24.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;const&lt;/strong&gt; 和 &lt;strong&gt;let&lt;/strong&gt;,&lt;strong&gt;class&lt;/strong&gt; 都是在定义所在范围内有效，不会被外部环境所影响（暂时性死区），即使是定义全局变量，该属性也不属于GO的属性，而var 则可以变量提升，在function内声明一个全局变量，该变量依旧是GO的属性，从而污染外部环境，var的这一特性的引用如for循环实现计数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;var&lt;/strong&gt; 可以先使用后定义不会报错，而const 和let class 必须先定义后使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>前端XSS攻击</title>
