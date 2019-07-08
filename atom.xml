@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-25T15:41:38.793Z</updated>
+  <updated>2019-07-08T15:14:17.233Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pc端及移动端样式重置</title>
+    <link href="http://yoursite.com/2019/06/30/%E6%A0%B7%E5%BC%8F%E9%87%8D%E7%BD%AEreset/"/>
+    <id>http://yoursite.com/2019/06/30/样式重置reset/</id>
+    <published>2019-06-30T04:08:06.000Z</published>
+    <updated>2019-07-08T15:14:17.233Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/5-1.jpg&quot; alt=&quot;bg&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;常用pc端重置全局样式&quot;&gt;&lt;a href=&quot;#常用pc端重置全局样
+      
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>var const let class</title>
