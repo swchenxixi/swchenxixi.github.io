@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-08T15:14:17.233Z</updated>
+  <updated>2019-07-08T15:22:57.150Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,12 @@
     <link href="http://yoursite.com/2019/06/30/%E6%A0%B7%E5%BC%8F%E9%87%8D%E7%BD%AEreset/"/>
     <id>http://yoursite.com/2019/06/30/样式重置reset/</id>
     <published>2019-06-30T04:08:06.000Z</published>
-    <updated>2019-07-08T15:14:17.233Z</updated>
+    <updated>2019-07-08T15:22:57.150Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/5-1.jpg&quot; alt=&quot;bg&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;常用pc端重置全局样式&quot;&gt;&lt;a href=&quot;#常用pc端重置全局样
-      
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/5-1.jpg&quot; alt=&quot;bg&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;常用pc端重置全局样式&quot;&gt;&lt;a href=&quot;#常用pc端重置全局样式&quot; class=&quot;headerlink&quot; title=&quot;常用pc端重置全局样式&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;p style=&quot;text-align:center&quot;&gt;常用pc端重置全局样式&lt;/p&gt;&lt;/strong&gt;&lt;/h2&gt;&lt;p style=&quot;color:red&quot;&gt;reset.css&lt;/p&gt;
     
     </summary>
     
