@@ -409,60 +409,14 @@
 
       
         
-          
-            <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/study.jpeg" alt="bg"></p>
-<ul>
-<li>前两个都是写法不同的<span style="color:red">立即执行函数</span>，立即执行函数特性详见笔记</li>
-</ul>
-<pre><code>&lt;p style=&quot;background-color:rgb(148 139 80);color:#000&quot;&gt;(ps：立即执行函数与匿名自执行函数是不同的：立即执行函数可以是匿名也可以不匿名他的特征是立即执行完然后销毁自身，匿名自执行函数必须是匿名的并且特征是自己引用自己，自己调用自己来执行，如：&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var demo1=function()&#123;demo1();&#125;)</span><br></pre></td></tr></table></figure>
-
-或者
-
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var demo2=function()&#123;arguments.callee();&#125;  //必须用arguments.callee()来执行自己</span><br></pre></td></tr></table></figure>
-
-定义一个函数有两种方式 ：&lt;span style=&quot;color:red;font-weight:bold&quot;&gt;函数声明语句：fucntion functionName(){}&lt;/span&gt;和&lt;span style=&quot;color:orange;font-weight:bold&quot;&gt;函数表达式：var name=function(){}&lt;/span&gt;；
-
-&lt;span style=&quot;color:rgb(151 54 50);font-weight:bold&quot;&gt;立即执行函数的原理是必须是函数表达式&lt;/span&gt;才能给方法加上小括号让其自执行，如果是函数声明语句后边加上小括号让他自执行是会报错的，所以立即执行函数写法都是让function不成为首行关键字(当关键字function出现在首行他就是一个函数语句，语句是没有返回结果的)，让他成为一个函数表达式（作为函数表达式就有返回结果了）如（function（）{}（））或者(function（）{ })() ，或者var save=function(){}()；或者
-
-`
-[function(){}()]
-`
-
-`
-~function(){}()
-`
-
-`
-+function(){}()
-`
-
-`
--function(){}()
-`
-
-`
-!function(){}()
-`
-
-`
-void function(){}()
-`
-
-&lt;p style=&quot;color:Red&quot;&gt;总之，要让函数立即执行他必须是个函数表达式
-
-（立即执行与自执行）详见参考：https://www.cnblogs.com/TomXu/archive/2011/12/31/2289423.html
-</code></pre><ul>
-<li><p>$(function(){})与$(documnet).ready(function(){})的简写，在dom加载完后执行的回调函数，<span style="color:red;font-weight:bold">并且只会执行一次</span></p>
-</li>
-<li><p>(functon(){})匿名函数，后边通常用立即执行函数来调用：（function(){}()）或者(function(){})()</p>
-</li>
-</ul>
-
-          
+          <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/study.jpeg" alt="bg"></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/07/(function(){}())与(function(){})()与$(function(){})与（fuction(){}/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
