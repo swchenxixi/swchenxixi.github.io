@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-11T04:07:00.109Z</updated>
+  <updated>2019-07-11T04:13:02.982Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,14 @@
     <link href="http://yoursite.com/2019/07/07/(function()%7B%7D())%E4%B8%8E(function()%7B%7D)()%E4%B8%8E$(function()%7B%7D)%E4%B8%8E%EF%BC%88fuction()%7B%7D/"/>
     <id>http://yoursite.com/2019/07/07/(function(){}())与(function(){})()与$(function(){})与（fuction(){}/</id>
     <published>2019-07-07T15:38:48.000Z</published>
-    <updated>2019-07-11T04:07:00.109Z</updated>
+    <updated>2019-07-11T04:13:02.982Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/study.jpeg&quot; alt=&quot;bg&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;前两个都是写法不同的&lt;span style=&quot;color:red&quot;&gt;立即执行函数&lt;/span&gt;
+&lt;li&gt;&lt;p&gt;前两个都是写法不同的&lt;span style=&quot;color:red&quot;&gt;立即执行函数&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;&lt;p style=&quot;background-color:rgb(148 139 80);color:#000&quot;&gt;(ps：立即执行函数与匿名自执行函数是不同的：立即执行函数可以是匿名也可以不匿名他的特征是立即执行完然后销毁自身，匿名自执行函数必须是匿名的并且特征是自己引用自己，自己调用自己来执行，如：&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
     
     </summary>
     
