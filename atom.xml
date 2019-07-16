@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-11T04:16:01.825Z</updated>
+  <updated>2019-07-16T15:56:22.424Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面试</title>
+    <link href="http://yoursite.com/2019/07/16/%E9%9D%A2%E8%AF%95/"/>
+    <id>http://yoursite.com/2019/07/16/面试/</id>
+    <published>2019-07-16T14:55:06.000Z</published>
+    <updated>2019-07-16T15:56:22.424Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="other" scheme="http://yoursite.com/categories/other/"/>
+    
+    
+      <category term="other" scheme="http://yoursite.com/tags/other/"/>
+    
+  </entry>
   
   <entry>
     <title>(function(){}())与(function(){})()与$(function(){})与（fuction(){}）</title>
