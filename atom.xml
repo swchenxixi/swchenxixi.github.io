@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-16T15:56:22.424Z</updated>
+  <updated>2019-07-21T08:11:40.130Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>const</title>
+    <link href="http://yoursite.com/2019/07/19/const%E5%BC%95%E5%8F%91/"/>
+    <id>http://yoursite.com/2019/07/19/const引发/</id>
+    <published>2019-07-19T14:16:08.000Z</published>
+    <updated>2019-07-21T08:11:40.130Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/59.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;const定义的复杂变量里边的属性和方法值等都可以改变，但是对象不可以重新赋值&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javaScript" scheme="http://yoursite.com/tags/javaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>面试</title>
