@@ -85,7 +85,7 @@
 <meta name="keywords" content="前端,个人博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="好姑娘">
-<meta property="og:url" content="http://yoursite.com/tags/javascript/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/javaScript/index.html">
 <meta property="og:site_name" content="好姑娘">
 <meta property="og:description" content="web前端开发">
 <meta property="og:locale" content="zh-Hans">
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/javascript/">
+  <link rel="canonical" href="http://yoursite.com/tags/javaScript/">
 
 
 
 
 
-  <title>标签: javascript | 好姑娘</title>
+  <title>标签: javaScript | 好姑娘</title>
   
 
 
@@ -309,7 +309,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>javascript<small>标签</small>
+        <h1>javaScript<small>标签</small>
         </h1>
       </div>
 
@@ -321,69 +321,17 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/07/07/(function(){}())与(function(){})()与$(function(){})与（fuction(){}/" itemprop="url">
+            <a class="post-title-link" href="/2019/07/21/const引发/" itemprop="url">
               
-                <span itemprop="name">(function(){}())与(function(){})()与$(function(){})与（fuction(){}）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-07T23:38:48+08:00" content="2019-07-07">
-          07-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/06/23/var const  let class/" itemprop="url">
-              
-                <span itemprop="name">var const let class</span>
+                <span itemprop="name">const</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-23T00:00:06+08:00" content="2019-06-23">
-          06-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/06/16/前端XSS攻击/" itemprop="url">
-              
-                <span itemprop="name">前端XSS攻击</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-16T00:28:10+08:00" content="2019-06-16">
-          06-16
+        <time class="post-time" itemprop="dateCreated" datetime="2019-07-21T16:18:08+08:00" content="2019-07-21">
+          07-21
         </time>
       </div>
 
@@ -1042,6 +990,77 @@
               var searchResultList = '<ul class=\"search-result-list\">';
               resultItems.forEach(function (result) {
                 searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+ult.item;
               })
               searchResultList += "</ul>";
               resultContent.innerHTML = searchResultList;
