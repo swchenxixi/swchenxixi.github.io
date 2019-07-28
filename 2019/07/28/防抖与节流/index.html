@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="css,">
+  <meta name="keywords" content="javaScript,">
 
 
 
@@ -81,22 +81,20 @@
 
 
 
-<meta name="description" content="方法一1em指的是一个字体的大小，它会继承父级元素的字体大小，因此并不是一个固定的值。任何浏览器的默认字体大小都是16px。因此，12px = 0.75em。实际应用中通常设置样式： html { font-size: 62.5%; } 1em = 10px。常用的1.2em理论上就是12px。 但是，这个换算在IE浏览器下不成立，1.2em会比12px稍大一些。">
-<meta name="keywords" content="css">
+<meta name="description" content="相同点：都是为了防止事件被频繁触发，占用资源而影响程序的处理方式  防抖的概念：（将多次执行变为最后一次执行）   所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。防抖函数分为非立即执行版和立即执行版，双剑合璧版本  节流的概念：（将多次执行变为每隔一段时间执行，减少函数的执行频率）   所谓节流，就是指连续触发事件但是在 n 秒">
+<meta name="keywords" content="javaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="px与rem单位换算">
-<meta property="og:url" content="http://yoursite.com/2019/05/05/px与rem的单位换算/index.html">
+<meta property="og:title" content="防抖与节流">
+<meta property="og:url" content="http://yoursite.com/2019/07/28/防抖与节流/index.html">
 <meta property="og:site_name" content="好姑娘">
-<meta property="og:description" content="方法一1em指的是一个字体的大小，它会继承父级元素的字体大小，因此并不是一个固定的值。任何浏览器的默认字体大小都是16px。因此，12px = 0.75em。实际应用中通常设置样式： html { font-size: 62.5%; } 1em = 10px。常用的1.2em理论上就是12px。 但是，这个换算在IE浏览器下不成立，1.2em会比12px稍大一些。">
+<meta property="og:description" content="相同点：都是为了防止事件被频繁触发，占用资源而影响程序的处理方式  防抖的概念：（将多次执行变为最后一次执行）   所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。防抖函数分为非立即执行版和立即执行版，双剑合璧版本  节流的概念：（将多次执行变为每隔一段时间执行，减少函数的执行频率）   所谓节流，就是指连续触发事件但是在 n 秒">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/10.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/2.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.png">
-<meta property="og:updated_time" content="2019-06-08T15:12:46.186Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/67.jpg">
+<meta property="og:updated_time" content="2019-07-28T12:12:46.227Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="px与rem单位换算">
-<meta name="twitter:description" content="方法一1em指的是一个字体的大小，它会继承父级元素的字体大小，因此并不是一个固定的值。任何浏览器的默认字体大小都是16px。因此，12px = 0.75em。实际应用中通常设置样式： html { font-size: 62.5%; } 1em = 10px。常用的1.2em理论上就是12px。 但是，这个换算在IE浏览器下不成立，1.2em会比12px稍大一些。">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/10.jpg">
+<meta name="twitter:title" content="防抖与节流">
+<meta name="twitter:description" content="相同点：都是为了防止事件被频繁触发，占用资源而影响程序的处理方式  防抖的概念：（将多次执行变为最后一次执行）   所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。防抖函数分为非立即执行版和立即执行版，双剑合璧版本  节流的概念：（将多次执行变为每隔一段时间执行，减少函数的执行频率）   所谓节流，就是指连续触发事件但是在 n 秒">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/67.jpg">
 
 
 
@@ -126,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/05/px与rem的单位换算/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/28/防抖与节流/">
 
 
 
 
 
-  <title>px与rem单位换算 | 好姑娘</title>
+  <title>防抖与节流 | 好姑娘</title>
   
 
 
@@ -321,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/05/px与rem的单位换算/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/28/防抖与节流/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="好姑娘">
@@ -338,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">px与rem单位换算</h1>
+          <h1 class="post-title" itemprop="name headline">防抖与节流</h1>
         
 
         <div class="post-meta">
@@ -350,8 +348,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-05T23:48:11+08:00">
-                2019-05-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-28T19:59:14+08:00">
+                2019-07-28
               </time>
             
 
@@ -373,8 +371,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
                   </a>
                 </span>
 
@@ -410,52 +408,22 @@
       
 
       
-        <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/10.jpg" alt=""></p>
-<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>1em指的是一个字体的大小，它会继承父级元素的字体大小，因此并不是一个固定的值。任何浏览器的默认字体大小都是16px。因此，12px = 0.75em。实际应用中通常设置样式：</p>
-<p>html { font-size: 62.5%; }</p>
-<p>1em = 10px。常用的1.2em理论上就是12px。</p>
-<p>但是，这个换算在IE浏览器下不成立，1.2em会比12px稍大一些。<br><a id="more"></a></p>
-<p>解决办法是把html标签样式中的62.5%改成63%，即：</p>
-<p>html { font-size: 63%; }</p>
-<p>一般会在段首空两格。如果用px作为单位，对12px字体来说需要空出24px，对14px字体来说需要空出28px……这样换算非常不通用。如果用上em单位，1个字的大小就是1em，那两个字的大小就是2em。因此</p>
-<p>p { text-indent: 2em; }</p>
-<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><pre><code>px比em更加容易使用,em指字体高，任意浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px，所以10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明Font-size=62.5%，这就使em值变为16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将原来的px数值除以10，然后换上em作为单位就行了。
-</code></pre><h3 id="em的特性"><a href="#em的特性" class="headerlink" title="em的特性"></a>em的特性</h3><ol>
-<li>em的值并不是固定的；</li>
-<li>em会继承父级元素的字体大小。</li>
+        <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/67.jpg" alt=""></p>
+<ol>
+<li><p style="color:#ff4500">相同点：都是为了防止事件被频繁触发，占用资源而影响程序的处理方式</p>
+</li>
+<li><p style="background-color:#df0;color:#000">防抖的概念：（将多次执行变为最后一次执行）</p>
+
+<p> 所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。防抖函数分为<span style="color:#800000">非立即执行版和立即执行版，双剑合璧版本</span></p>
+</li>
+<li><p style="background-color:#df0;color:#000">节流的概念：（将多次执行变为每隔一段时间执行，减少函数的执行频率）</p>
+
+<p> 所谓节流，就是指连续触发事件但是在 n 秒中只执行一次函数。节流会稀释函数的执行频率。对于节流，一般有两种方式可以实现，分别是<span style="color:#800000">时间戳版和定时器版</span></p>
+</li>
 </ol>
-<p>浏览器默认的字号16px，px单位与rem之间的转换关系：</p>
-<p> <img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/2.png" alt="">    </p>
-<p> 在<html>元素中设置font-size值为62.5%:<br>相当于在<html>中设置font-size为10px，此时，<br>所示的值改变： </html></html></p>
-<p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/4.png" alt=""></p>
-<blockquote>
-<p>rem在众多浏览器中都已得到很好的支持，如果项目不用考虑IE8一下低版本的话，可放心的使用</p>
-</blockquote>
-<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>在页面写入核心原生JS代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function (doc, win) &#123;</span><br><span class="line">        var docEl = doc.documentElement,</span><br><span class="line">            resizeEvt = &apos;onorientationchange&apos; in window ? &apos;onorientationchange&apos; : &apos;resize&apos;,</span><br><span class="line">            recalc = function () &#123;</span><br><span class="line">                var clientWidth = docEl.clientWidth;</span><br><span class="line">                if (!clientWidth) return;</span><br><span class="line">                if(clientWidth&gt;=750)&#123;</span><br><span class="line">                    docEl.style.fontSize = &apos;100px&apos;;</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                    docEl.style.fontSize = 100 * (clientWidth / 750) + &apos;px&apos;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;;</span><br><span class="line"> </span><br><span class="line">        if (!doc.addEventListener) return;</span><br><span class="line">        win.addEventListener(resizeEvt, recalc, false);</span><br><span class="line">        doc.addEventListener(&apos;DOMContentLoaded&apos;, recalc, false);</span><br><span class="line">    &#125;)(document, window);</span><br></pre></td></tr></table></figure>
-<p><strong>如果页面的宽度超过了750px，那么页面中html的font-size恒为100px，否则，页面中html的font-size的大小为： 100 * (当前页面宽度 / 750)</strong></p>
-<h2 id="为什么是750px？"><a href="#为什么是750px？" class="headerlink" title="为什么是750px？"></a>为什么是750px？</h2><p>对于手机屏幕来说，750px的页面宽度是一个安全的最大宽度，保证了移动端页面两边不会留白。这里的px是css逻辑像素，与设备的物理像素是有区别的。</p>
-<p>如iPhone 5使用的是Retina视网膜屏幕，使用2px x 2px的 device pixel 代表 1px x 1px 的 css pixel，所以设备像素数为750 x 1136px，而它的CSS逻辑像素数为375 x 568px。如果要切移动端页面，可以先把效果图宽度等比例缩放到750px，很好用。</p>
-<h3 id="为什么要设置html的font-size？"><a href="#为什么要设置html的font-size？" class="headerlink" title="为什么要设置html的font-size？"></a>为什么要设置html的font-size？</h3><p>rem就是根元素（即：html）的字体大小。html中的所有标签样式凡是涉及到尺寸的（如： height,width,padding,margin,font-size。甚至，left,top等）可以放心大胆的用rem作单位。</p>
-<p>如果把html的font-size设为20px，rem就是html的字体大小，那么1rem = 20px。</p>
-<p>此时，此时宽60px，高40px的元素样式就这样设置如下 ↓</p>
-<p><code>width: 3rem;
-height: 2rem;</code></p>
-<p>要是宽55px，高37px,然后经过换算，，设置如下 ↓</p>
-<p><code>width: 2.75rem;
-height: 1.85rem;</code></p>
-<p>发现这换算起来有点麻烦啊，，，（当然，要是心算帝请无视）<br>如果我们一开始把html的font-size设为100px呢？此时1rem = 100px，那么上面的宽，高就可以这么设置 </p>
-<p><code>width: 0.55rem;
-height: 0.37rem;</code><br>换算起来简单多了？！</p>
-<p><strong>（为什么不一开始把html的font-size设为1px呢，这样换算起来也简单，答：浏览器一般都有最小字体限制，比如谷歌浏览器，最小中文字体就是12px，所以实际上没有办法让1rem=1px。）</strong></p>
-<p>根据上面的js代码，如果页面宽度低于750px,那么页面中html的font-size也会按照（当前页面宽度/750）的比例变化。这样，页面中凡是应用了rem的作尺寸单位的元素都会随着页面变化而等比例缩放了！</p>
-<p>哪些情况可以用rem布局:<br>大部分情况下都可以用rem布局这个方法，具体还要看情况而定。比如底部的导航不用rem，而是用的flex布局。因为导航点击最多，所以给它一个固定的大小（其实就是高度固定，宽度自适应的方案）</p>
-<h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><h3 id="在rem布局中小技巧："><a href="#在rem布局中小技巧：" class="headerlink" title="在rem布局中小技巧："></a>在rem布局中小技巧：</h3><p>页面中模块间距离一般为0.2rem。字体的大小一般分为四个档次 0.2rem 0.24rem 0.28rem 0.32rem。</p>
-<p>拿项目举例，我们移动端页面效果图的宽度都定在了750px。于是在项目中，最外层的div样式就设置成了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">position: relative;</span><br><span class="line"> width: 100%;</span><br><span class="line"> max-width: 750px;</span><br><span class="line"> min-width: 320px;</span><br><span class="line"> margin: 0 auto;</span><br></pre></td></tr></table></figure>
-<p>所有的元素都可以写在这个div中了，于是就可以开始写样式了</p>
-<p>rem布局中，如果有个元素需要水平居中固定到页面底部:(前提是这个元素还是在前面说的最外层水平居中的大div中)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">position: fixed;</span><br><span class="line"> bottom: 0;</span><br><span class="line"> z-index: 100;</span><br><span class="line"> width: 100%;</span><br><span class="line"> max-width: 750px;</span><br><span class="line"> min-width: 320px;</span><br></pre></td></tr></table></figure>
+<p style="font-weight:bold">防抖：你一秒钟按了10次 但是请求只出去一次</p>
+
+<p style="font-weight:bold">节流：你一秒钟按了10次，这十次在之后每秒中发出一次 10秒才完全发完</p>
 
       
     </div>
@@ -467,38 +435,6 @@ height: 0.37rem;</code><br>换算起来简单多了？！</p>
     <div>
       
         
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-  
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
-  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-
-  <p><span>本文标题:</span>px与rem单位换算</p>
-  <p><span>文章作者:</span>好姑娘</p>
-  <p><span>发布时间:</span>2019年05月05日 - 23:48:11</p>
-  <p><span>最后更新:</span>2019年06月08日 - 23:12:46</p>
-  <p><span>原始链接:</span><a href="/2019/05/05/px与rem的单位换算/" title="px与rem单位换算">http://yoursite.com/2019/05/05/px与rem的单位换算/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/05/05/px与rem的单位换算/" aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-    clipboard.on('success', $(function(){
-      $(".fa-clipboard").click(function(){
-        swal({   
-          title: "",   
-          text: '复制成功',   
-          html: false,
-          timer: 500,   
-          showConfirmButton: false
-        });
-      });
-    }));  
-</script>
-
       
   </div>
 
@@ -515,7 +451,7 @@ height: 0.37rem;</code><br>换算起来简单多了？！</p>
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2019/05/05/px与rem的单位换算/" title="px与rem单位换算">http://yoursite.com/2019/05/05/px与rem的单位换算/</a>
+    <a href="http://yoursite.com/2019/07/28/防抖与节流/" title="防抖与节流">http://yoursite.com/2019/07/28/防抖与节流/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -530,7 +466,7 @@ height: 0.37rem;</code><br>换算起来简单多了？！</p>
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag"># css</a>
+            <a href="/tags/javaScript/" rel="tag"># javaScript</a>
           
         </div>
       
@@ -543,8 +479,8 @@ height: 0.37rem;</code><br>换算起来简单多了？！</p>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/15/TCP三次握手和四次挥手/" rel="next" title="TCP三次握手和四次挥手">
-                <i class="fa fa-chevron-left"></i> TCP三次握手和四次挥手
+              <a href="/2019/07/21/const引发/" rel="next" title="const">
+                <i class="fa fa-chevron-left"></i> const
               </a>
             
           </div>
@@ -552,10 +488,6 @@ height: 0.37rem;</code><br>换算起来简单多了？！</p>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/20/Vue2/" rel="prev" title="Vue2">
-                Vue2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -633,17 +565,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -770,22 +693,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一"><span class="nav-number">1.</span> <span class="nav-text">方法一</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总结："><span class="nav-number">1.1.</span> <span class="nav-text">总结：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#em的特性"><span class="nav-number">1.2.</span> <span class="nav-text">em的特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二"><span class="nav-number">2.</span> <span class="nav-text">方法二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么是750px？"><span class="nav-number">3.</span> <span class="nav-text">为什么是750px？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要设置html的font-size？"><span class="nav-number">3.1.</span> <span class="nav-text">为什么要设置html的font-size？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#心得"><span class="nav-number">4.</span> <span class="nav-text">心得</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在rem布局中小技巧："><span class="nav-number">4.1.</span> <span class="nav-text">在rem布局中小技巧：</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
