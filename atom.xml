@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-28T12:12:46.227Z</updated>
+  <updated>2019-07-28T12:40:28.133Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="http://yoursite.com/2019/07/28/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/"/>
     <id>http://yoursite.com/2019/07/28/防抖与节流/</id>
     <published>2019-07-28T11:59:14.000Z</published>
-    <updated>2019-07-28T12:12:46.227Z</updated>
+    <updated>2019-07-28T12:40:28.133Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/67.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/67.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p style=&quot;color:#ff4500&quot;&gt;相同点：都是为了防止
-      
+&lt;li&gt;&lt;p style=&quot;color:#ff4500&quot;&gt;相同点：都是为了防止事件被频繁触发，占用资源而影响程序的处理方式&lt;/p&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
