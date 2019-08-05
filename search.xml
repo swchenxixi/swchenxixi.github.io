@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[webSocket]]></title>
+    <url>%2F2019%2F08%2F05%2FwebSocket%2F</url>
+    <content type="text"><![CDATA[websocket： websocket是基于TCP协议的一种新型网络协议，实现了服务端与客户端的双工（full-duplex）通信，允许服务端主动发送消息给客户端（在线聊天室、消息实时推送、在线客服等场景） websocket与HTTP协议的区别在于如果用HTTP协议去实现在线聊天室的话，HTTP是请求—响应式的协议，即客户端发起请求服务端响应，服务端无法主动向客户端发送内容，如果用HTTP协议去实现在线聊天室的话就要用Ajax轮询的方式去实现，客户端设置每秒询问服务端是否有消息，每次请求都要三次握手四次挥手，非常消耗性能，webcocket只需建立一次连接就可，实现双向通信 websocketAPI: https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket 在H5中使用websocket:h5中已直接提供websocketAPI，直接使用 创建websocketbsocket对象let socket = new webSocket(‘服务地址’); 注册open事件 123socket.addEventListenner('open',function()&#123; //opne:注册的连接成功时触发的事件 ……&#125;); 主动给websocket发送消息 socket.send()方法 message ：接收websocket返回的消息 1234socket.addEvenListenner('message',function(e)&#123; console.log(e.data);&#125;) NodeJS写服务端nodejs安装配置：https://www.runoob.com/nodejs/nodejs-install-setup.html websocket官网：http://www.websocket.org/ nodejs-websocket模块：https://github.com/sitegui/nodejs-websocket]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[防抖与节流]]></title>
     <url>%2F2019%2F07%2F28%2F%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81%2F</url>
     <content type="text"><![CDATA[相同点：都是为了防止事件被频繁触发，占用资源而影响程序的处理方式 防抖的概念：（将多次执行变为最后一次执行） 所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。防抖函数分为非立即执行版和立即执行版，双剑合璧版本 节流的概念：（将多次执行变为每隔一段时间执行，减少函数的执行频率） 所谓节流，就是指连续触发事件但是在 n 秒中只执行一次函数。节流会稀释函数的执行频率。对于节流，一般有两种方式可以实现，分别是时间戳版和定时器版 防抖：你一秒钟按了10次 但是请求只出去一次 节流：你一秒钟按了10次，这十次在之后每秒中发出一次 10秒才完全发完]]></content>

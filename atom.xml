@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-28T12:40:28.133Z</updated>
+  <updated>2019-08-05T16:19:14.785Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webSocket</title>
+    <link href="http://yoursite.com/2019/08/05/webSocket/"/>
+    <id>http://yoursite.com/2019/08/05/webSocket/</id>
+    <published>2019-08-05T15:51:09.000Z</published>
+    <updated>2019-08-05T16:19:14.785Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/1.jpg&quot; alt=&quot;bg&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;websocket：&quot;&gt;&lt;a href=&quot;#websocket：&quot; class=&quot;headerlink&quot; title=&quot;websocket：&quot;&gt;&lt;/a&gt;websocket：&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;websocket是基于TCP协议的一种新型&lt;span style=&quot;color:    #A52A2A&quot;&gt;网络协议&lt;/span&gt;，实现了服务端与客户端的双工（full-duplex）通信，&lt;span style=&quot;color:    #A52A2A;font-weight:bold&quot;&gt;允许服务端主动发送消息给客户端（在线聊天室、消息实时推送、在线客服等场景）&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javaScript" scheme="http://yoursite.com/tags/javaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>防抖与节流</title>
