@@ -91,7 +91,9 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/1.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/5.png">
-<meta property="og:updated_time" content="2019-08-05T16:19:14.785Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/6.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/7.png">
+<meta property="og:updated_time" content="2019-08-05T17:18:35.212Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webSocket">
 <meta name="twitter:description" content="websocket： websocket是基于TCP协议的一种新型网络协议，实现了服务端与客户端的双工（full-duplex）通信，允许服务端主动发送消息给客户端（在线聊天室、消息实时推送、在线客服等场景）">
@@ -428,10 +430,12 @@
 <ol start="3">
 <li>主动给websocket发送消息 <span style="color:#A52A2A;font-weight:bold"> socket.send()方法</span></li>
 </ol>
+<p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/6.png" alt=""></p>
 <ol start="4">
 <li><span style="color:#A52A2A;font-weight:bold">message</span> ：接收websocket返回的消息</li>
 </ol>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">socket.addEvenListenner(<span class="string">'message'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(e.data);</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/7.png" alt=""></p>
 <h3 id="NodeJS写服务端"><a href="#NodeJS写服务端" class="headerlink" title="NodeJS写服务端"></a>NodeJS写服务端</h3><p>nodejs安装配置：<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">https://www.runoob.com/nodejs/nodejs-install-setup.html</a></p>
 <p>websocket官网：<a href="http://www.websocket.org/" target="_blank" rel="noopener">http://www.websocket.org/</a></p>
 <p>nodejs-websocket模块：<a href="https://github.com/sitegui/nodejs-websocket" target="_blank" rel="noopener">https://github.com/sitegui/nodejs-websocket</a></p>
