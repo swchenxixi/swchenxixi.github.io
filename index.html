@@ -317,6 +317,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/BFC,IFC,FFC,GFC/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="好姑娘">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/e.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="好姑娘">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/16/BFC,IFC,FFC,GFC/" itemprop="url">BFC,IFC,GFC,FFC</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-16T02:51:09+08:00">
+                2019-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/39.jpg" alt=""></p>
+<h3 id="BFC：-block-formating-context-块级格式上下文"><a href="#BFC：-block-formating-context-块级格式上下文" class="headerlink" title="BFC：(block formating context) 块级格式上下文"></a>BFC：(block formating context) 块级格式上下文</h3><p style="background-color:    #A52A2A">css3中定义的一个概念，是页面渲染中一个独立的区域<br>当css属性设置为display：block，inlin-block，带有block即为块级level，在定位布局中是一个独立的隔离的区域，不会对外彼此影响元素。</p><br>触发块级格式上下文的条件有：当属性设置为<br><p style="color:    #A52A2A;font-weight:bold"><br>display:block/inlin-block，table,table-cell</p>
+
+<p style="color:    #A52A2A;font-weight:bold">position 值不为relative static</p>
+
+<p style="color:    #A52A2A;font-weight:bold">overflow值不为visiable</p>
+
+<p style="color:    #A52A2A;font-weight:bold"><br>float值不为static relative<br></p><br>     常见应用场景：多兰布局，结合float浮动元素<br><br><br>### IFC:(inline formating context)  行内格式上下文<br><br><em> IFC的line box（线框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的padding/margin影响)，左右一般都贴紧整个IFC，但是会因为float元素而扰乱，loat元素会位于IFC与与line box之间，使得line box宽度缩短
+</em> 同个ifc下的多个line box高度会不同。<br>* IFC中时不可能有块级元素的，当p包裹div时，会产生两个匿名块与div分隔开，即产生两个IFC，但对外表现为块级元素，与div垂直排列。<br><br>常见应用场景：<br>1. 当一个块级元素要在环境中水平居中时，给块级元素设置inline-block，则会在外层产生IFC，通过text-align则可以使其水平居中。<br><br>2. 垂直居中：创建一个行内块级元素，用其中一个元素撑开父元素的高度，然后设置父元素vertical-align:middle，父元素下的其他行内元素都会垂直居中。<br><br>3. 实现块级元素左右布局，尽量使用inline-block，使用float浮动实现左右布局脱离文档流，尽量少用，而用inline-block则更加的方便，避免产生其他未知问题<br><br><br>### GFC:(grid formating context)  Grid布局 格式上下文<br><br><p style="background-color:        #FF1493">当一个元素设置为display:grid 时，生成一个独立的渲染区域，通过在网格容器上定义网格定义行（grid definition rows）和网格定义列（grid definition columns）属性各在网格项目（grid item）上定义网格行（grid row）和网格列（grid columns）为每一个网格项目（grid item）定义位置和空间。</p>
+
+<p style="color:#A52A2A;font-weight:bold">grid布局和table布局的区别，GridLayout有更加丰富的属性去控制行和列，</p>
+
+
+
+
+<h3 id="FFC-flex-formating-context-Flex布局格式上下文（自适应格式上下文）"><a href="#FFC-flex-formating-context-Flex布局格式上下文（自适应格式上下文）" class="headerlink" title="FFC:(flex  formating context)  Flex布局格式上下文（自适应格式上下文）"></a>FFC:(flex  formating context)  Flex布局格式上下文（自适应格式上下文）</h3><p style="background-color:    #006400">display值为flex或者inline-flex的元素将会生成自适应容器,置为 flex 的容器被渲染为一个块级元素，而设置为 inline-flex 的容器则渲染为一个行内元素</p>
+
+
+<p>布局的传统解决方案，基于盒模型，依赖 display属性 + position属性 + float属性,对于那些特殊布局非常不方便,flex布局超级牛逼：快速布局+代码简洁，flex布局分为旧版本dispaly: box;，过渡版本dispaly: flex box;，以及现在的标准版本display: flex;所以如果只是写新版本的语法形式，存在一些兼容性问题。</p>
+<h4 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h4><p>2.3 开始支持旧版本 display:-webkit-box;</p>
+<p>4.4 开始支持标准版本 display: flex;</p>
+<h4 id="IOS"><a href="#IOS" class="headerlink" title="IOS"></a>IOS</h4><p>6.1 开始支持旧版本 display:-webkit-box;</p>
+<p>7.1 开始支持标准版本display: flex;</p>
+<h4 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h4><p>ie10开始支持，但是IE10的是-ms形式的。</p>
+<p style="background-color:#DC143C">兼容表：</p>
+
+<p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/bfc.png" alt=""></p>
+<h4 id="常用属性有："><a href="#常用属性有：" class="headerlink" title="常用属性有："></a>常用属性有：</h4><h5 id="flex-容器上："><a href="#flex-容器上：" class="headerlink" title="flex 容器上："></a>flex 容器上：</h5><p>flex-direction:  row | row-reverse | column | column-reverse;  设置主轴</p>
+<p>justify-content:center | space-between | space-around 等：子元素在主轴上的对齐方式，具体如何怼起看主轴是row还是colum</p>
+<p>align-items:center| …… ：设置子元素在交叉轴上的对齐方式</p>
+<h5 id="容器内的子元素上"><a href="#容器内的子元素上" class="headerlink" title="容器内的子元素上:"></a>容器内的子元素上:</h5><p>flex-grow:值     :子元素占比例</p>
+<p>flex-shrink   :定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
+<p>order   :order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+  
+    <div>
+      
+  </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/webSocket/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1689,161 +1868,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-categories" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/05/px与rem的单位换算/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="好姑娘">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/e.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="好姑娘">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/05/px与rem的单位换算/" itemprop="url">px与rem单位换算</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-05T23:48:11+08:00">
-                2019-05-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/10.jpg" alt=""></p>
-<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>1em指的是一个字体的大小，它会继承父级元素的字体大小，因此并不是一个固定的值。任何浏览器的默认字体大小都是16px。因此，12px = 0.75em。实际应用中通常设置样式：</p>
-<p>html { font-size: 62.5%; }</p>
-<p>1em = 10px。常用的1.2em理论上就是12px。</p>
-<p>但是，这个换算在IE浏览器下不成立，1.2em会比12px稍大一些。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/05/05/px与rem的单位换算/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-  
-    <div>
-      
-  </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1896,7 +1920,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

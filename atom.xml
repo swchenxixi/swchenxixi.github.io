@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-05T17:18:35.212Z</updated>
+  <updated>2019-08-15T18:23:55.429Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BFC,IFC,GFC,FFC</title>
+    <link href="http://yoursite.com/2019/08/16/BFC,IFC,FFC,GFC/"/>
+    <id>http://yoursite.com/2019/08/16/BFC,IFC,FFC,GFC/</id>
+    <published>2019-08-15T18:51:09.000Z</published>
+    <updated>2019-08-15T18:23:55.429Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/39.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;BFC：-block-formating-context-块级格式上下文
+      
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>webSocket</title>
@@ -44,7 +68,7 @@
     <link href="http://yoursite.com/2019/07/28/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/"/>
     <id>http://yoursite.com/2019/07/28/防抖与节流/</id>
     <published>2019-07-28T11:59:14.000Z</published>
-    <updated>2019-07-28T12:40:28.133Z</updated>
+    <updated>2019-08-15T18:24:20.484Z</updated>
     
     <summary type="html">
     

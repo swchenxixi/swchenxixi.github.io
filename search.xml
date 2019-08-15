@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[BFC,IFC,GFC,FFC]]></title>
+    <url>%2F2019%2F08%2F16%2FBFC%2CIFC%2CFFC%2CGFC%2F</url>
+    <content type="text"><![CDATA[BFC：(block formating context) 块级格式上下文css3中定义的一个概念，是页面渲染中一个独立的区域当css属性设置为display：block，inlin-block，带有block即为块级level，在定位布局中是一个独立的隔离的区域，不会对外彼此影响元素。触发块级格式上下文的条件有：当属性设置为display:block/inlin-block，table,table-cell position 值不为relative static overflow值不为visiable float值不为static relative 常见应用场景：多兰布局，结合float浮动元素### IFC:(inline formating context) 行内格式上下文 IFC的line box（线框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的padding/margin影响)，左右一般都贴紧整个IFC，但是会因为float元素而扰乱，loat元素会位于IFC与与line box之间，使得line box宽度缩短 同个ifc下的多个line box高度会不同。* IFC中时不可能有块级元素的，当p包裹div时，会产生两个匿名块与div分隔开，即产生两个IFC，但对外表现为块级元素，与div垂直排列。常见应用场景：1. 当一个块级元素要在环境中水平居中时，给块级元素设置inline-block，则会在外层产生IFC，通过text-align则可以使其水平居中。2. 垂直居中：创建一个行内块级元素，用其中一个元素撑开父元素的高度，然后设置父元素vertical-align:middle，父元素下的其他行内元素都会垂直居中。3. 实现块级元素左右布局，尽量使用inline-block，使用float浮动实现左右布局脱离文档流，尽量少用，而用inline-block则更加的方便，避免产生其他未知问题### GFC:(grid formating context) Grid布局 格式上下文当一个元素设置为display:grid 时，生成一个独立的渲染区域，通过在网格容器上定义网格定义行（grid definition rows）和网格定义列（grid definition columns）属性各在网格项目（grid item）上定义网格行（grid row）和网格列（grid columns）为每一个网格项目（grid item）定义位置和空间。 grid布局和table布局的区别，GridLayout有更加丰富的属性去控制行和列， FFC:(flex formating context) Flex布局格式上下文（自适应格式上下文）display值为flex或者inline-flex的元素将会生成自适应容器,置为 flex 的容器被渲染为一个块级元素，而设置为 inline-flex 的容器则渲染为一个行内元素 布局的传统解决方案，基于盒模型，依赖 display属性 + position属性 + float属性,对于那些特殊布局非常不方便,flex布局超级牛逼：快速布局+代码简洁，flex布局分为旧版本dispaly: box;，过渡版本dispaly: flex box;，以及现在的标准版本display: flex;所以如果只是写新版本的语法形式，存在一些兼容性问题。 Android2.3 开始支持旧版本 display:-webkit-box; 4.4 开始支持标准版本 display: flex; IOS6.1 开始支持旧版本 display:-webkit-box; 7.1 开始支持标准版本display: flex; PCie10开始支持，但是IE10的是-ms形式的。 兼容表： 常用属性有：flex 容器上：flex-direction: row | row-reverse | column | column-reverse; 设置主轴 justify-content:center | space-between | space-around 等：子元素在主轴上的对齐方式，具体如何怼起看主轴是row还是colum align-items:center| …… ：设置子元素在交叉轴上的对齐方式 容器内的子元素上:flex-grow:值 :子元素占比例 flex-shrink :定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。 order :order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[webSocket]]></title>
     <url>%2F2019%2F08%2F05%2FwebSocket%2F</url>
     <content type="text"><![CDATA[websocket： websocket是基于TCP协议的一种新型网络协议，实现了服务端与客户端的双工（full-duplex）通信，允许服务端主动发送消息给客户端（在线聊天室、消息实时推送、在线客服等场景） websocket与HTTP协议的区别在于如果用HTTP协议去实现在线聊天室的话，HTTP是请求—响应式的协议，即客户端发起请求服务端响应，服务端无法主动向客户端发送内容，如果用HTTP协议去实现在线聊天室的话就要用Ajax轮询的方式去实现，客户端设置每秒询问服务端是否有消息，每次请求都要三次握手四次挥手，非常消耗性能，webcocket只需建立一次连接就可，实现双向通信 websocketAPI: https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket 在H5中使用websocket:h5中已直接提供websocketAPI，直接使用 创建websocketbsocket对象let socket = new webSocket(‘服务地址’); 注册open事件 123socket.addEventListenner('open',function()&#123; //opne:注册的连接成功时触发的事件 ……&#125;); 主动给websocket发送消息 socket.send()方法 message ：接收websocket返回的消息 1234socket.addEvenListenner('message',function(e)&#123; console.log(e.data);&#125;) NodeJS写服务端nodejs安装配置：https://www.runoob.com/nodejs/nodejs-install-setup.html websocket官网：http://www.websocket.org/ nodejs-websocket模块：https://github.com/sitegui/nodejs-websocket]]></content>
