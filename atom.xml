@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-15T18:23:55.429Z</updated>
+  <updated>2019-08-26T16:14:43.170Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>正则</title>
+    <link href="http://yoursite.com/2019/08/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/08/26/正则表达式/</id>
+    <published>2019-08-26T15:59:09.000Z</published>
+    <updated>2019-08-26T16:14:43.170Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;定义：&quot;&gt;&lt;a href=&quot;#定义：&quot; class=&quot;headerlink&quot; title=&quot;定义：&quot;&gt;&lt;/a&gt;定义：&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;正则表达式：用来描述规则的表达式。是每个前端开发必须要掌握的一门技术，在实际开发过程中广泛被用到的一种需要，主要实现字符串的模式匹配，实现搜索和替换功能，它的底层原理是使用状态机的思想去实现模式匹配 &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>BFC,IFC,GFC,FFC</title>
     <link href="http://yoursite.com/2019/08/16/BFC,IFC,FFC,GFC/"/>
     <id>http://yoursite.com/2019/08/16/BFC,IFC,FFC,GFC/</id>
     <published>2019-08-15T18:51:09.000Z</published>
-    <updated>2019-08-15T18:23:55.429Z</updated>
+    <updated>2019-08-26T16:14:46.298Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/39.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;BFC：-block-formating-context-块级格式上下文
-      
+      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sex-cjh/Graph-bed/master/img/39.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;BFC：-block-formating-context-块级格式上下文&quot;&gt;&lt;a href=&quot;#BFC：-block-formating-context-块级格式上下文&quot; class=&quot;headerlink&quot; title=&quot;BFC：(block formating context) 块级格式上下文&quot;&gt;&lt;/a&gt;BFC：(block formating context) 块级格式上下文&lt;/h3&gt;&lt;p style=&quot;background-color:    #A52A2A;color:#fff&quot;&gt;css3中定义的一个概念，是页面渲染中一个独立的区域&lt;br&gt;当css属性设置为display：block，inlin-block，带有block即为块级level，在定位布局中是一个独立的隔离的区域，不会对外彼此影响元素。&lt;/p&gt;&lt;br&gt;触发块级格式上下文的条件有：当属性设置为&lt;br&gt;
     
     </summary>
     
